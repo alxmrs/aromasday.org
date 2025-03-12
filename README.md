@@ -3,9 +3,9 @@
 [![pages-deploy](https://github.com/alxmrs/pandoc-website-template/actions/workflows/pages.yml/badge.svg)](https://github.com/alxmrs/pandoc-website-template/actions/workflows/pages.yml)
 [![shellcheck](https://github.com/alxmrs/pandoc-website-template/actions/workflows/shellcheck.yml/badge.svg)](https://github.com/alxmrs/pandoc-website-template/actions/workflows/shellcheck.yml)
 
-A template to build static websites with [Pandoc](https://pandoc.org/). 
+Source code for aromasday dot org. Based on a template to build static websites with [Pandoc](https://pandoc.org/). 
 
-Demo site: [pandoc.merose.com](https://pandoc.merose.com/).
+Live site: [aromasday.org](https://aromasday.org)
 
 ## Use
 
@@ -46,7 +46,7 @@ for more inspiration.
 
 ### Deployment
 
-This template will publish the static site to [Github Pages](https://pages.github.com) via [Github Actions](http://github.com/actions).
+This will publish the static site to [Github Pages](https://pages.github.com) via [Github Actions](http://github.com/actions).
 
 
 ## Thanks to 
