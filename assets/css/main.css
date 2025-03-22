@@ -1,16 +1,58 @@
 /* thanks https://bettermotherfuckingwebsite.com */
+@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+
+/** Color palette: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
+
 body {
     margin: 40px auto;
     max-width: 650px;
     line-height: 1.6;
     font-size: 18px;
-    color: #444;
+    color: #283618;
+    background-color: #FEFAE0;
     padding: 0 10px
 }
 
+
 h1, h2, h3 {
-    line-height: 1.2
+    color: #606C38;
+    font-family: "Chicle", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
 }
+
+.full-bleed {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #DDA15E;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.content-wrapper {
+  max-width: 650px;
+  margin: 0 auto;
+}
+
+nav {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #BC6C25;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-top: -40px; /* Counters the body's top margin */
+}
+
+footer {
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
+  background-color: #BC6C25;
+  padding: 20px;
+  box-sizing: border-box;
+  margin-bottom: -40px; /* Extends beyond the body's bottom margin */
+}
+
 
 nav ul {
     padding: 0;
@@ -28,7 +70,7 @@ img {
     max-width: 95%;
 }
 
-/*Thanks https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling */
+/* Thanks https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling */
 blockquote {
     filter: opacity(75%);
     border-left: 10px solid #ccc;
@@ -45,4 +87,21 @@ blockquote:before {
 }
 blockquote p {
     display: inline;
+}
+
+.sponsors ul {
+    display: flex;
+    list-style: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-content: stretch;
+}
+
+.sponsors ul li {
+    max-width: 200px;
+}
+
+.hide {
+    display: none;
 }

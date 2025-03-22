@@ -1,2 +1,5 @@
 header-includes:
   - <meta property="og:image" content="/assets/a-good-place-to-live.png">
+  - <link rel="preconnect" href="https://fonts.googleapis.com">
+  - <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  - <link href="https://fonts.googleapis.com/css2?family=Chicle&display=swap" rel="stylesheet">
