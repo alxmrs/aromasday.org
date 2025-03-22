@@ -9,7 +9,7 @@ We are excited to announce that Aromas Day 2025 planning has begun!
 
 Get ready for a fantastic day filled with music, delicious food, community and much more!
 
-It's will be a good day in the country.
+It will be a good day in the country.
 
 ![](/assets/a-good-place-to-live.png "Aromas, a good place to live")
 
