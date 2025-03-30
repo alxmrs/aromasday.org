@@ -1,107 +1,513 @@
-/* thanks https://bettermotherfuckingwebsite.com */
-@import url('https://fonts.googleapis.com/css2?family=Chicle&display=swap');
+/* Base styles with improved typography and spacing */
+@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:wght@300;400;600&display=swap');
 
-/** Color palette: https://coolors.co/palette/606c38-283618-fefae0-dda15e-bc6c25 */
+:root {
+  --color-dark-green: #283618;
+  --color-light-green: #606C38;
+  --color-cream: #FEFAE0;
+  --color-light-orange: #DDA15E;
+  --color-dark-orange: #BC6C25;
+  --max-width: 800px;
+  --border-radius: 8px;
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
 
 body {
-    margin: 40px auto;
-    max-width: 650px;
-    line-height: 1.6;
-    font-size: 18px;
-    color: #283618;
-    background-color: #FEFAE0;
-    padding: 0 10px
+  margin: 0;
+  line-height: 1.8;
+  font-family: 'Poppins', sans-serif;
+  font-size: 16px;
+  color: var(--color-dark-green);
+  background-color: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-
-h1, h2, h3 {
-    color: #606C38;
-    font-family: "Chicle", serif;
-    font-weight: 400;
-    font-style: normal;
-    font-size: 3rem;
-}
-
-.full-bleed {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #DDA15E;
-  padding: 10px;
-  box-sizing: border-box;
+/* Main content container to ensure consistent centering */
+main, header, #title-block-header, body > p, body > ul, body > h2 {
+  width: 100%;
+  max-width: var(--max-width);
+  padding: 0 20px;
 }
 
 .content-wrapper {
-  max-width: 650px;
+  max-width: var(--max-width);
   margin: 0 auto;
+  padding: 0 20px;
+  width: 100%;
 }
 
+/* Typography */
+h1, h2, h3 {
+  color: var(--color-light-green);
+  font-family: "Chicle", serif;
+  font-weight: 400;
+  margin: 1.5rem 0 1rem 0;
+  line-height: 1.2;
+}
+
+h1 {
+  font-size: 3.5rem;
+  text-align: center;
+  margin-top: 2rem;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h3 {
+  font-size: 1.8rem;
+}
+
+p {
+  margin-bottom: 1.2rem;
+}
+
+a {
+  color: var(--color-dark-orange);
+  text-decoration: none;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-light-orange);
+  text-decoration: underline;
+}
+
+
+.full-bleed a:hover {
+  color: var(--color-dark-green);
+  text-decoration: underline;
+}
+
+/* Navigation */
 nav {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #BC6C25;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-top: -40px; /* Counters the body's top margin */
+  background-color: var(--color-dark-orange);
+  padding: 15px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
 }
-
-footer {
-  width: 100vw;
-  margin-left: calc(-50vw + 50%);
-  background-color: #BC6C25;
-  padding: 20px;
-  box-sizing: border-box;
-  margin-bottom: -40px; /* Extends beyond the body's bottom margin */
-}
-
 
 nav ul {
-    padding: 0;
-    list-style: none;
-    font-weight: bold;
+  padding: 0;
+  list-style: none;
+  display: flex;
 }
 
 nav ul li {
-    display: inline;
-    margin-right: 20px;
-    line-height: 2.5em;
+  margin-right: 20px;
 }
 
-img {
-    max-width: 95%;
+nav ul li a {
+  color: var(--color-cream);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  font-size: 0.9rem;
+  padding: 8px 12px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease;
 }
 
-/* Thanks https://css-tricks.com/snippets/css/simple-and-nice-blockquote-styling */
+nav ul li a:hover {
+  background-color: rgba(254, 250, 224, 0.2);
+  text-decoration: none;
+}
+
+/* Header */
+header {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+/* Full-bleed sections */
+.full-bleed {
+  width: 100%;
+  background-color: var(--color-light-orange);
+  padding: 3rem 0;
+  margin: 3rem 0;
+}
+
+/* Enhanced blockquote for announcements */
 blockquote {
-    filter: opacity(75%);
-    border-left: 10px solid #ccc;
-    margin: 1.5em 10px;
-    padding: 0.5em 10px;
-    quotes: "\201C""\201D""\2018""\2019";
+  background-color: rgba(255, 255, 255, 0.6);
+  border-left: 6px solid var(--color-light-green);
+  margin: 2rem 0;
+  padding: 1.5rem 2rem;
+  border-radius: var(--border-radius);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  position: relative;
 }
+
 blockquote:before {
-    content: open-quote;
-    font-size: 4em;
-    line-height: 0.1em;
-    margin-right: 0.25em;
-    vertical-align: -0.4em;
+  content: open-quote;
+  font-size: 4em;
+  color: var(--color-light-green);
+  opacity: 0.3;
+  position: absolute;
+  left: 10px;
+  top: -10px;
 }
+
 blockquote p {
-    display: inline;
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+blockquote strong {
+  color: var(--color-dark-orange);
+}
+
+/* Images */
+img {
+  max-width: 100%;
+  height: auto;
+  border-radius: var(--border-radius);
+  display: block;
+  margin: 1.5rem auto;
+  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Features list */
+#featuring {
+  margin-top: 2.5rem;
+}
+
+ul {
+  padding-left: 1.5rem;
+  margin-bottom: 2rem;
+}
+
+ul li {
+  margin-bottom: 0.8rem;
+  position: relative;
+}
+
+#featuring + ul li {
+  list-style: none;
+  padding-left: 1.5rem;
+}
+
+#featuring + ul li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.5rem;
+  width: 8px;
+  height: 8px;
+  background-color: var(--color-light-green);
+  border-radius: 50%;
+}
+
+/* Sponsors section */
+.sponsors {
+  padding: 1rem 0;
 }
 
 .sponsors ul {
-    display: flex;
-    list-style: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    align-content: stretch;
+  display: flex;
+  list-style: none;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 2rem;
+  padding: 0;
+  margin: 2rem 0;
 }
 
 .sponsors ul li {
-    max-width: 200px;
+  flex: 0 0 calc(33.333% - 2rem);
+  max-width: 180px;
+  text-align: center;
+  transition: transform 0.2s ease;
 }
 
+.sponsors ul li:hover {
+  transform: scale(1.05);
+}
+
+.sponsors ul li img {
+  max-width: 100%;
+  height: auto;
+  filter: grayscale(20%);
+  transition: filter 0.3s ease;
+}
+
+.sponsors ul li img:hover {
+  filter: grayscale(0%);
+}
+
+/* Footer Styles */
+footer {
+  background-color: var(--color-dark-orange);
+  color: var(--color-cream);
+  width: 100%;
+  padding: 0;
+  margin-top: 4rem;
+}
+
+.footer-content {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 3rem 20px 2rem;
+}
+
+.footer-section {
+  flex: 1;
+  min-width: 200px;
+  margin-bottom: 2rem;
+  padding-right: 2rem;
+}
+
+.footer-section h3 {
+  font-size: 1.8rem;
+  margin-bottom: 1.2rem;
+  color: var(--color-cream);
+  position: relative;
+  padding-bottom: 0.8rem;
+}
+
+.footer-section h3::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  height: 3px;
+  background-color: var(--color-light-orange);
+}
+
+.footer-section p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+  opacity: 0.9;
+}
+
+.footer-section.about {
+  flex: 2;
+  min-width: 300px;
+}
+
+.contact {
+  margin-top: 1.5rem;
+}
+
+.contact span {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-size: 0.95rem;
+}
+
+.footer-section.links ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.footer-section.links ul li {
+  margin-bottom: 0.8rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+.footer-section.links ul li::before {
+  content: "→";
+  position: absolute;
+  left: 0;
+  color: var(--color-light-orange);
+}
+
+.footer-section.links a,
+.contact a {
+  color: var(--color-cream);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer-section.links a:hover,
+.contact a:hover {
+  color: var(--color-light-orange);
+  text-decoration: underline;
+}
+
+.subscribe-form {
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 1rem;
+}
+
+.subscribe-form input {
+  flex: 1;
+  min-width: 120px;
+  padding: 10px 15px;
+  border: none;
+  border-radius: var(--border-radius) 0 0 var(--border-radius);
+  font-size: 0.9rem;
+  font-family: inherit;
+}
+
+.subscribe-form button {
+  background-color: var(--color-light-green);
+  color: var(--color-cream);
+  border: none;
+  padding: 10px 15px;
+  border-radius: 0 var(--border-radius) var(--border-radius) 0;
+  cursor: pointer;
+  font-weight: bold;
+  font-family: inherit;
+  transition: background-color 0.3s ease;
+}
+
+.subscribe-form button:hover {
+  background-color: #4a5a2a;
+}
+
+.footer-bottom {
+  background-color: rgba(0, 0, 0, 0.15);
+  padding: 1.5rem 20px;
+  text-align: center;
+}
+
+.social-icons {
+  margin-bottom: 1rem;
+}
+
+.social-icon {
+  display: inline-block;
+  width: 36px;
+  height: 36px;
+  line-height: 36px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 50%;
+  margin: 0 5px;
+  color: var(--color-cream);
+  transition: all 0.3s ease;
+}
+
+.social-icon:hover {
+  background-color: var(--color-light-orange);
+  transform: translateY(-3px);
+}
+
+.copyright {
+  font-size: 0.85rem;
+  opacity: 0.8;
+  margin: 0;
+}
+
+.copyright a {
+  color: var(--color-cream);
+  text-decoration: underline;
+}
+
+.copyright a:hover {
+  color: var(--color-light-orange);
+}
+
+/* Simple icons using pseudo-elements */
+.icon-calendar::before {
+  content: "📅";
+  margin-right: 5px;
+}
+
+.icon-email::before {
+  content: "📧";
+  margin-right: 5px;
+}
+
+.icon-facebook::before {
+  content: "f";
+  font-weight: bold;
+}
+
+.icon-instagram::before {
+  content: "📷";
+}
+
+.icon-rss::before {
+  content: "📰";
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .footer-content {
+    flex-direction: column;
+  }
+
+  .footer-section {
+    padding-right: 0;
+  }
+}
+
+@media (max-width: 480px) {
+  .subscribe-form {
+    flex-direction: column;
+  }
+
+  .subscribe-form input {
+    border-radius: var(--border-radius);
+    margin-bottom: 0.5rem;
+  }
+
+  .subscribe-form button {
+    border-radius: var(--border-radius);
+    width: 100%;
+  }
+}
+
+/* Utility classes */
 .hide {
-    display: none;
+  display: none;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.8rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  .sponsors ul li {
+    flex: 0 0 calc(50% - 2rem);
+  }
+}
+
+@media (max-width: 480px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  body {
+    font-size: 15px;
+  }
+
+  .sponsors ul li {
+    flex: 0 0 100%;
+    max-width: 160px;
+  }
+
+  blockquote {
+    padding: 1rem 1.5rem;
+  }
+
+  blockquote:before {
+    font-size: 3em;
+  }
 }
