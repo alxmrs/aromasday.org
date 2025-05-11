@@ -151,7 +151,6 @@ blockquote {
 }
 
 blockquote:before {
-  content: open-quote;
   font-size: 4em;
   color: var(--color-light-green);
   opacity: 0.3;

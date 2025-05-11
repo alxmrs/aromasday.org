@@ -11,6 +11,10 @@ Get ready for a fantastic day filled with music, delicious food, community and m
 
 It will be a good day in the country.
 
+<div style="align: center">
+[Booth Application](https://docs.google.com/forms/d/e/1FAIpQLSeo_oHYftYeSryk4mQmRl1LxETJ1iKisYX3nq3vnohe3LQ1uA/viewform?usp=sharing"){.footer-button}
+</div>
+
 ![](/assets/a-good-place-to-live.png "Aromas, a good place to live")
 
 
@@ -22,8 +26,11 @@ It will be a good day in the country.
 Aromas Day is run by a small but dedicated group of volunteers. If you want to give back and make the next Aromas Day
 better, we'd love to have you as a volunteer.
 
-Currently, there are two good ways to make a contribution:
+Currently, there are three good ways to make a contribution:
 
+- First, you can apply to have a booth at Aromas Day! We're accepting applications now for non-profit booths, garage sale alley spaces, vendors selling artisan goods, and informational booths. Please apply via this form:
+
+  [Booth Application](https://docs.google.com/forms/d/e/1FAIpQLSeo_oHYftYeSryk4mQmRl1LxETJ1iKisYX3nq3vnohe3LQ1uA/viewform?usp=sharing"){.footer-button}
 - You can attend the organizers meetings, which are held 7-8pm, 2nd Wednesdays of the
   month at [The Aromas Grange](https://aromasgrange.org/).
 - [Email us](mailto:organizers+volunteer@aromasday.org) asking to be added to a list of "day-of" volunteers.
@@ -40,7 +47,7 @@ Currently, there are two good ways to make a contribution:
 - **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
 - **☮️ Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
 - **🪇 Live Music** - Come listen to local music of all kinds at the main stage at Marshall's.
-- **🎨 Artist's Booths** - [Aromas Hills Artisans](https://aromashillsartisans.org/) selling their latest creations.
+- **🎨 Artist's Booths** - Aromas artisans selling their latest creations.
 - **🧶 Vendors** - Local artisans with items of all kinds for sale.
 - **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
 - **👧 Kids Zone** - Activities for kids in the park! Come see performers, art in the park.
