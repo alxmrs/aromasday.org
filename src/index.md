@@ -33,7 +33,7 @@ Currently, there are three good ways to make a contribution:
   [Booth Application](https://docs.google.com/forms/d/e/1FAIpQLSeo_oHYftYeSryk4mQmRl1LxETJ1iKisYX3nq3vnohe3LQ1uA/viewform?usp=sharing"){.footer-button}
 - You can attend the organizers meetings, which are held 7-8pm, 2nd Wednesdays of the
   month at [The Aromas Grange](https://aromasgrange.org/).
-- [Email us](mailto:organizers+volunteer@aromasday.org) asking to be added to a list of "day-of" volunteers.
+- [Email us](mailto:organizers@aromasday.org) asking to be added to a list of "day-of" volunteers.
     - We have volunteer opportunities for a variety of _tasks_ and a variety of _time commitments_. Even if you only
       have a couple of hours to offer, we would love your help.
     - Once you get on our list, we'll get back to you two weeks before Aromas Day during a volunteer meeting to match
@@ -74,7 +74,7 @@ Currently, there are three good ways to make a contribution:
 ## Become a sponsor!
 
 We'll post a form for you to sign up to become a sponsor soon. In the meantime,
-please [email us (organizers@aromasday.org)](mailto:organizers+sponsor@aromasday.org)!
+please [email us (organizers@aromasday.org)](mailto:organizers@aromasday.org)!
 
 </div>
 </div>
