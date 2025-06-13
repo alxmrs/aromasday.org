@@ -58,23 +58,27 @@ Currently, there are three good ways to make a contribution:
 
 <div class="sponsors">
 
-<div class="hide">
 
 ## Thanks to our Sponsors!
 
+- ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
+ 
+<div class="hide">
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
 - ![](/assets/sponsors/arroyo.png "Arroyo Landscape Construction")
 - ![](/assets/sponsors/graniterock.png "Graniterock")
 - ![](/assets/sponsors/recology.jpg "Recology | Waste Zero")
-- ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
 - ![](/assets/sponsors/cnn.jpg "C&N Tractors")
 
 </div>
 
 ## Become a sponsor!
 
-We'll post a form for you to sign up to become a sponsor soon. In the meantime,
-please [email us (organizers@aromasday.org)](mailto:organizers@aromasday.org)!
+There are many reasons to sponsor Aromas day. Check out this [slide deck](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000)
+to learn why you should sponsor our event, our levels of sponsorship, and how you can apply to be a sponsor.
+
+[Sponsor Aromas Day!](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000){.footer-button}
+
 
 </div>
 </div>
