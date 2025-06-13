@@ -72,6 +72,11 @@ Currently, there are three good ways to make a contribution:
 
 </div>
 
+</div>
+</div>
+</div>
+
+
 ## Become a sponsor!
 
 There are many reasons to sponsor Aromas day. Check out this [slide deck](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000)
@@ -79,8 +84,4 @@ to learn why you should sponsor our event, our levels of sponsorship, and how yo
 
 [Sponsor Aromas Day!](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000){.footer-button}
 
-
-</div>
-</div>
-</div>
 
