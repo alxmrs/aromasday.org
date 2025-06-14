@@ -49,7 +49,6 @@ Currently, there are three good ways to make a contribution:
 - **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
 - **☮️ Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
 - **🪇 Live Music** - Come listen to local music of all kinds at the main stage at Marshall's.
-- **🎨 Artist's Booths** - Aromas artisans selling their latest creations.
 - **🧶 Vendors** - Local artisans with items of all kinds for sale.
 - **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
 - **👧 Kids Zone** - Activities for kids in the park! Come see performers, art in the park.
