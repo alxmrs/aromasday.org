@@ -31,6 +31,14 @@ jobs:
         with:
           persist-credentials: false
 
+      - name: Cache Pandoc Package
+        uses: actions/cache@v3
+        with:
+          path: pandoc.deb
+          key: pandoc-deb-3.6.3
+          restore-keys: |
+            pandoc-deb-
+
       - name: Install Pandoc
         run: bin/install
 
