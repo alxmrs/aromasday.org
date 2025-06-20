@@ -21,6 +21,13 @@ jobs:
         restore-keys: |
           pandoc-deb-
 
+    - name: Cache Pandoc RSS
+      uses: actions/cache@v3
+      with:
+        path: rss
+        key: pandoc-rss-${{ hashFiles('**/install') }}
+        restore-keys: |
+          pandoc-rss-
 
     - name: Install Pandoc
       run: bin/install
