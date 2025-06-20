@@ -36,7 +36,7 @@ Currently, there are three good ways to make a contribution:
 - Apply to be a day-of volunteer with this form!
 
   [Volunteer Application](https://forms.gle/sHu5cCoFgh8zoFeJA){.footer-button}
-    - We have volunteer opportunities for a variety of _tasks_ and a variety of _time commitments_. Even if you only
+    - We have volunteer opportunities for a variety of tasks and a variety of time commitments. Even if you only
       have a couple of hours to offer, we would love your help.
     - Once you get on our list, we'll get back to you two weeks before Aromas Day during a volunteer meeting to match
       you to an assignment.
