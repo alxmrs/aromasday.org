@@ -63,14 +63,13 @@ Currently, there are three good ways to make a contribution:
 ## Thanks to our Sponsors!
 
 - ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
- 
-<div class="hide">
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
 - ![](/assets/sponsors/arroyo.png "Arroyo Landscape Construction")
 - ![](/assets/sponsors/graniterock.png "Graniterock")
-- ![](/assets/sponsors/recology.jpg "Recology | Waste Zero")
 - ![](/assets/sponsors/cnn.jpg "C&N Tractors")
-
+ 
+<div class="hide">
+- ![](/assets/sponsors/recology.jpg "Recology | Waste Zero")
 </div>
 
 </div>
