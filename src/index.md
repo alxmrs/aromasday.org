@@ -67,6 +67,7 @@ Currently, there are three good ways to make a contribution:
 - ![](/assets/sponsors/graniterock.png "Graniterock")
 - ![](/assets/sponsors/arroyo.png "Arroyo Landscape Construction")
 - ![](/assets/sponsors/cnn.jpg "C&N Tractors")
+- ![](/assets/sponsors/willis-construction.png "Willis Construction Co. Inc")
 
 </div>
 </div>
