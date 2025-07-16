@@ -62,8 +62,8 @@ Currently, there are three good ways to make a contribution:
 
 ## Thanks to our Sponsors!
 
-- ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
+- ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
 - ![](/assets/sponsors/graniterock.png "Graniterock")
 - ![](/assets/sponsors/arroyo.png "Arroyo Landscape Construction")
 - ![](/assets/sponsors/cnn.jpg "C&N Tractors")
