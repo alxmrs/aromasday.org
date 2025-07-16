@@ -2,11 +2,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:wght@300;400;600&display=swap');
 
 :root {
-  --color-dark-green: #283618;
-  --color-light-green: #606C38;
-  --color-cream: #FEFAE0;
-  --color-light-orange: #DDA15E;
-  --color-dark-orange: #BC6C25;
+  --color-dark-green: #4f5432;
+  --color-light-green: #616547;
+  --color-cream: #eae3d1;
+  --color-light-orange: #c48c6c;
+  --color-dark-orange: #955032;
   --max-width: 800px;
   --border-radius: 8px;
 }
@@ -176,6 +176,10 @@ img {
   display: block;
   margin: 1.5rem auto;
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.banner {
+    box-shadow: unset;
 }
 
 /* Features list */

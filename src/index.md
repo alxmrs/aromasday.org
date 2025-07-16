@@ -5,17 +5,13 @@ description-meta: A day in the country (August 24, 2025).
 
 > **Save-the-date**: Aromas Day will be on **August 24th, 2025**. 
 
-We are excited to announce that Aromas Day 2025 planning has begun!
+![](/assets/aromas-day-2025.png "A day in the country"){.banner}
 
-Get ready for a fantastic day filled with music, delicious food, community and much more!
-
-It will be a good day in the country.
+Aromas day is coming soon! Get ready for a good day in the country. This August 24th will be a fantastic day filled with music, delicious food, community and much more!
 
 <div style="align: center">
-[Booth Application](https://docs.google.com/forms/d/e/1FAIpQLSeo_oHYftYeSryk4mQmRl1LxETJ1iKisYX3nq3vnohe3LQ1uA/viewform?usp=sharing"){.footer-button}
+[Sponsor Aromas Day](#become-a-sponsor){.footer-button}
 </div>
-
-![](/assets/a-good-place-to-live.png "Aromas, a good place to live")
 
 
 <div class="full-bleed">
