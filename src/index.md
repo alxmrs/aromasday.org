@@ -24,11 +24,8 @@ Aromas day is coming soon! Get ready for a good day in the country. This August 
 Aromas Day is run by a small but dedicated group of volunteers. If you want to give back and make the next Aromas Day
 better, we'd love to have you as a volunteer.
 
-Currently, there are three good ways to make a contribution:
+Currently, there are two good ways to make a contribution:
 
-- First, you can apply to have a booth at Aromas Day! We're accepting applications now for non-profit booths, garage sale alley spaces, vendors selling artisan goods, and informational booths. Please apply via this form:
-
-  [Booth Application](https://docs.google.com/forms/d/e/1FAIpQLSeo_oHYftYeSryk4mQmRl1LxETJ1iKisYX3nq3vnohe3LQ1uA/viewform?usp=sharing"){.footer-button}
 - You can attend the organizers meetings, which are held 7-8pm, 2nd Wednesdays of the
   month at [The Aromas Grange](https://aromasgrange.org/).
 - Apply to be a day-of volunteer with this form!
