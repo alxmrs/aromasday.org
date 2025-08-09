@@ -5,7 +5,7 @@ description-meta: A day in the country (August 24, 2025).
 
 #### Presented by the Aromas Eagles
 
-> **Save-the-date**: Aromas Day will be on **August 24th, 2025**. 
+> Aromas Day is on **August 24th, 2025**. 
 
 ![](/assets/aromas-day-2025.png "A day in the country"){.banner}
 
