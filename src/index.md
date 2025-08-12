@@ -65,7 +65,7 @@ Currently, there are two good ways to make a contribution:
 - ![](/assets/sponsors/recology.jpg "Recology")
 - ![](/assets/sponsors/willis-construction.png "Willis Construction Co. Inc")
 - ![](/assets/sponsors/morgan-la-mascus.png "Morgan La Mascus Graphic Design")
-- ![](/assets/sponsors/georges-plumbing.jpeg "George's Plumbing Service Inc")
+- ![](/assets/sponsors/georges-plumbing.png "George's Plumbing Service Inc")
 
 </div>
 </div>
