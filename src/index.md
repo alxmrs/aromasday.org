@@ -15,6 +15,17 @@ Aromas day is coming soon! Get ready for a good day in the country. This August 
 [Sponsor Aromas Day](#become-a-sponsor){.footer-button}
 </div>
 
+## Featuring
+
+- **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
+- **☮️ Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
+- **🪇 Live Music** - Come listen to local music of all kinds at the main stage at Marshall's.
+- **🧶 Vendors** - Local artisans with items of all kinds for sale.
+- **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
+- **👧 Kids Zone** - Activities for kids in the park! Come see performers, art in the park.
+- **🏎️ Car Show** - Cool cars to admire in the church parking lot.
+
+
 
 <div class="full-bleed">
 <div class="content-wrapper">
@@ -39,15 +50,32 @@ Currently, there are two good ways to make a contribution:
 </div>
 </div>
 
-## Featuring
+## Schedule
 
-- **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
-- **☮️ Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
-- **🪇 Live Music** - Come listen to local music of all kinds at the main stage at Marshall's.
-- **🧶 Vendors** - Local artisans with items of all kinds for sale.
-- **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
-- **👧 Kids Zone** - Activities for kids in the park! Come see performers, art in the park.
-- **🏎️ Car Show** - Cool cars to admire in the church parking lot.
+### Main Stage
+
+| Time         | Performance                                     |
+|--------------|-------------------------------------------------|
+| 9-10:30am    | Sej Miles                                       |
+| 11am-12:30pm | Neon City Lights                                |
+| 12:40-1pm    | Surfing Magician                                |
+| 1-2pm        | Surf City Line Dance </br> (_Join the lesson!_) |
+| 2:40-4pm     | Mariachi Juvenil Luz de Luna                    |
+
+### Kids Zone
+
+
+| Time       | Performance                        |
+|------------|------------------------------------|
+| 10am-12pm  | Free craft using local flowers\*  |
+| 12-12:30pm | Surfing Magician Show              |
+| 1-3pm      | Bubble Diva                        |
+
+<center>
+
+\*_All materials provided!_
+
+</center>
 
 <div class="full-bleed">
 <div class="content-wrapper">
