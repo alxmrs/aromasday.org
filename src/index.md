@@ -40,7 +40,7 @@ Aromas day is coming soon! Get ready for a good day in the country. This August 
 > - **Sunday, August 24, at 5pm** to tear down barriers. Meeting location TBD.
 
 Aromas Day is run by a small but dedicated group of volunteers. If you want to give back and make the next Aromas Day
-better, we'd love to have you as a volunteer.
+better, we'd love to have your help.
 
 Currently, there are two good ways to make a contribution:
 
