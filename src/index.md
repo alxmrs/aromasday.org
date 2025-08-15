@@ -74,7 +74,7 @@ Currently, there are two good ways to make a contribution:
 
 | Time       | Performance                        |
 |------------|------------------------------------|
-| 10am-12pm  | Free craft using local flowers\*  |
+| 10am-12pm  | Free craft using local flowers\*   |
 | 12-12:30pm | Surfing Magician Show              |
 | 1-3pm      | Bubble Diva                        |
 
