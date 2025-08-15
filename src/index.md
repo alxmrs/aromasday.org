@@ -32,6 +32,13 @@ Aromas day is coming soon! Get ready for a good day in the country. This August 
 
 ## Volunteer!
 
+> _Calling All Volunteers!_ 
+> 
+> We need folks to set up and tear down barriers! Please join us on one of the following times:
+> 
+> - **Saturday, August 23, at noon** to set up barriers.  Meet at the sports park.
+> - **Sunday, August 24, at 5pm** to tear down barriers. Meeting location TBD.
+
 Aromas Day is run by a small but dedicated group of volunteers. If you want to give back and make the next Aromas Day
 better, we'd love to have you as a volunteer.
 
