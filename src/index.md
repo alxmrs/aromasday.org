@@ -22,7 +22,7 @@ Aromas day is coming soon! Get ready for a good day in the country. This August 
 - **🪇 Live Music** - Come listen to local music of all kinds at the main stage at Marshall's.
 - **🧶 Vendors** - Local artisans with items of all kinds for sale.
 - **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
-- **👧 Kids Zone** - Activities for kids in the park! Come see performers, art in the park.
+- **👧 Kids Zone** - Activities for kids in the park! Come see performers and do a craft in the park.
 - **🏎️ Car Show** - Cool cars to admire in the church parking lot.
 
 
