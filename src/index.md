@@ -64,7 +64,7 @@ Currently, there are two good ways to make a contribution:
 | Time         | Performance                                     |
 |--------------|-------------------------------------------------|
 | 9-10:30am    | Sej Miles                                       |
-| 11am-12:30pm | Neon City Lights                                |
+| 11am-12:30pm | Neon City Limits                                |
 | 12:40-1pm    | Surfing Magician                                |
 | 1-2pm        | Surf City Line Dance </br> (_Join the lesson!_) |
 | 2:40-4pm     | Mariachi Juvenil Luz de Luna                    |
