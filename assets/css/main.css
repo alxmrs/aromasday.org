@@ -1,6 +1,10 @@
 /* Base styles with improved typography and spacing */
 @import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:wght@300;400;600&display=swap');
 
+html {
+  scroll-padding-top: 80px; /* Adjust based on your nav height + desired spacing */
+}
+
 :root {
   --color-dark-green: #4f5432;
   --color-light-green: #616547;
