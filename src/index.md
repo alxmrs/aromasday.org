@@ -9,7 +9,7 @@ description-meta: A day in the country (August 24, 2025).
 
 ![](/assets/aromas-day-2025.png "A day in the country"){.banner}
 
-Aromas day is coming soon! Get ready for a good day in the country. This August 24th will be a fantastic day filled with music, delicious food, community and much more!
+Aromas Day is coming soon! Get ready for a good day in the country. This August 24th will be a fantastic day filled with music, delicious food, community and much more!
 
 <div style="align: center">
 [Sponsor Aromas Day](#become-a-sponsor){.footer-button}
@@ -109,7 +109,7 @@ Currently, there are two good ways to make a contribution:
 
 ## Become a sponsor!
 
-There are many reasons to sponsor Aromas day. Check out this [slide deck](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000)
+There are many reasons to sponsor Aromas Day. Check out this [slide deck](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000)
 to learn why you should sponsor our event, our levels of sponsorship, and how you can apply to be a sponsor.
 
 [Sponsor Aromas Day!](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000){.footer-button}
