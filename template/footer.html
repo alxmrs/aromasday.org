@@ -1,40 +1,82 @@
 <footer>
-  <div class="footer-content">
-    <div class="footer-section about">
-      <h3>Aromas Day</h3>
-      <p>A community celebration in Aromas, California, bringing together local artists, musicians, and neighbors for a day of fun in the country to help support our local non-profits.</p>
-      <div class="contact">
-        <span><i class="icon-calendar"></i> August 24, 2025</span>
-        <span><i class="icon-email"></i> <a href="mailto:organizers@aromasday.org">organizers@aromasday.org</a></span>
-      </div>
+    <div class="footer-content">
+        <div class="footer-section about">
+            <h3>Aromas Day</h3>
+            <p>A community celebration in Aromas, California, bringing together local artists, musicians, and neighbors
+                for a day of fun in the country to help support our local non-profits.</p>
+            <div class="contact">
+                <span><i class="icon-calendar"></i> August 24, 2025</span>
+                <span><i class="icon-email"></i> <a href="mailto:organizers@aromasday.org">organizers@aromasday.org</a></span>
+            </div>
+        </div>
+
+        <div class="footer-section links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="/">Home</a></li>
+                <li><a href="#volunteer">Volunteer</a></li>
+                <li><a href="#schedule">Schedule</a></li>
+                <li><a href="#become-a-sponsor">Sponsorship</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-section community">
+            <h3>Get Involved</h3>
+            <p>Aromas Day is made possible by our wonderful community volunteers and sponsors.</p>
+            <div class="involvement-links">
+                <a href="#volunteer" class="footer-button">Volunteer Now</a>
+                <a href="#become-a-sponsor" class="footer-button">Become a Sponsor</a>
+            </div>
+        </div>
     </div>
 
-    <div class="footer-section links">
-      <h3>Quick Links</h3>
-      <ul>
-        <li><a href="/">Home</a></li>
-        <li><a href="#volunteer">Volunteer</a></li>
-        <li><a href="#schedule">Schedule</a></li>
-        <li><a href="#become-a-sponsor">Sponsorship</a></li>
-      </ul>
+    <div class="footer-bottom">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/groups/4220340398093441" class="social-icon"><i class="icon-facebook"></i></a>
+            <a href="https://www.instagram.com/aromas_day/" class="social-icon"><i class="icon-instagram"></i></a>
+            <a href="/rss.xml" class="social-icon"><i class="icon-rss"></i></a>
+        </div>
+        <p class="copyright">© 2025 Aromas Day Organizers. Part of <a href="https://aromas.town/">Aromas.Town</a></p>
     </div>
-
-    <div class="footer-section community">
-      <h3>Get Involved</h3>
-      <p>Aromas Day is made possible by our wonderful community volunteers and sponsors.</p>
-      <div class="involvement-links">
-        <a href="#volunteer" class="footer-button">Volunteer Now</a>
-        <a href="#become-a-sponsor" class="footer-button">Become a Sponsor</a>
-      </div>
-    </div>
-  </div>
-
-  <div class="footer-bottom">
-    <div class="social-icons">
-      <a href="https://www.facebook.com/groups/4220340398093441" class="social-icon"><i class="icon-facebook"></i></a>
-      <a href="https://www.instagram.com/aromas_day/" class="social-icon"><i class="icon-instagram"></i></a>
-      <a href="/rss.xml" class="social-icon"><i class="icon-rss"></i></a>
-    </div>
-    <p class="copyright">© 2025 Aromas Day Organizers. Part of <a href="https://aromas.town/">Aromas.Town</a></p>
-  </div>
 </footer>
+<script>
+    document.addEventListener('DOMContentLoaded', function() {
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        hamburger.addEventListener('click', function() {
+            // Toggle the hamburger animation
+            hamburger.classList.toggle('active');
+            // Toggle the mobile menu
+            navMenu.classList.toggle('active');
+        });
+
+        // Close menu when clicking on a link (for smooth navigation)
+        const navLinks = navMenu.querySelectorAll('a');
+        navLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            });
+        });
+
+        // Close menu when clicking outside
+        document.addEventListener('click', function(event) {
+            const isClickInsideNav = navMenu.contains(event.target) || hamburger.contains(event.target);
+
+            if (!isClickInsideNav && navMenu.classList.contains('active')) {
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+
+        // Handle window resize
+        window.addEventListener('resize', function() {
+            if (window.innerWidth > 768) {
+                // Reset mobile menu state when switching to desktop
+                hamburger.classList.remove('active');
+                navMenu.classList.remove('active');
+            }
+        });
+    });
+</script>
