@@ -57,7 +57,9 @@ Currently, there are two good ways to make a contribution:
 </div>
 </div>
 
-## Schedule
+## Map & Schedule
+
+![](/assets/2025-map.png "Map of Aromas Day 2025")
 
 ### Main Stage
 
