@@ -39,14 +39,6 @@ description-meta: A day in the country (August 24, 2025).
 </div>
 </div>
 
-
-## Become a sponsor!
-
-There are many reasons to sponsor Aromas Day. Check out this [slide deck](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000)
-to learn why you should sponsor our event, our levels of sponsorship, and how you can apply to be a sponsor.
-
-[Sponsor Aromas Day!](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000){.footer-button}
-
 ## Featuring
 
 - **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
@@ -62,6 +54,16 @@ to learn why you should sponsor our event, our levels of sponsorship, and how yo
 <div class="full-bleed">
 <div class="content-wrapper">
 
+## Become a sponsor!
+
+There are many reasons to sponsor Aromas Day. Check out this [slide deck](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000)
+to learn why you should sponsor our event, our levels of sponsorship, and how you can apply to be a sponsor.
+
+[Sponsor Aromas Day!](https://docs.google.com/presentation/d/e/2PACX-1vTqhXTgQwb3y3G6um1AfyIzPwx6WIYAFYG-31qpIBFhqrTIYqUm3SohJnnCt1vccSGKd0L8IlF0pYmu/pub?start=false&loop=false&delayms=3000){.footer-button}
+
+</div>
+</div>
+
 ## Volunteer!
 
 Aromas Day is run by a small but dedicated group of volunteers. If you want to give back and make the next Aromas Day
@@ -70,9 +72,6 @@ better, we'd love to have your help.
 Express interest in volunteering for Aromas Day 2026 here!
 
 [Volunteer Application](https://forms.gle/sHu5cCoFgh8zoFeJA){.footer-button}
-
-</div>
-</div>
 
 ## Map & Schedule
 
