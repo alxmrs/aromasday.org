@@ -1,16 +1,18 @@
 ---
-title: Aromas Day 2025!
-description-meta: A day in the country (August 24, 2025).
+title: Aromas Day
+description-meta: A day in the country.
 ---
 
 #### Presented by the Aromas Eagles
 
-> Thank you for a wonderful Aromas Day! 
-> 
-> We hope you had a good day in the country. See you next year!
+> Aromas Day is on **August 30th, 2026**.
 
 ![](/assets/aromas-day-2025.png "A day in the country"){.banner}
 
+We had a wonderful Aromas Day this past August. It was wonderful to celebrate our town with you all. Next year's Aromas
+Day celebration is currently being planned! Get ready for a good day in the country.
+
+We'll see you **August 30, 2026** for a fantastic day filled with music, delicious food, community and much more!
 
 <div style="align: center">
 [Sponsor Aromas Day](#become-a-sponsor){.footer-button}
@@ -24,6 +26,8 @@ description-meta: A day in the country (August 24, 2025).
 
 
 ## Thanks to our Sponsors!
+
+We are so grateful to our 2025 Aromas Day sponsors, without whom Aromas Day wound not be possible.
 
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
 - ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
@@ -72,36 +76,4 @@ better, we'd love to have your help.
 Express interest in volunteering for Aromas Day 2026 here!
 
 [Volunteer Application](https://forms.gle/sHu5cCoFgh8zoFeJA){.footer-button}
-
-## Map & Schedule
-
-![](/assets/2025-map.png "Map of Aromas Day 2025")
-
-### Main Stage
-
-| Time         | Performance                                     |
-|--------------|-------------------------------------------------|
-| 9-10:30am    | Sej Miles                                       |
-| 11am-12:30pm | Neon City Limits                                |
-| 12:40-1pm    | Surfing Magician                                |
-| 1-2pm        | Surf City Line Dance </br> (_Join the lesson!_) |
-| 2:40-4pm     | Mariachi Juvenil Luz de Luna                    |
-
-### Kids Zone
-
-
-| Time       | Performance                        |
-|------------|------------------------------------|
-| 10am-12pm  | Free craft using local flowers\*   |
-| 12-12:30pm | Surfing Magician Show              |
-| 1-3pm      | Bubble Diva                        |
-
-<center>
-
-\*_All materials provided!_
-
-</center>
-
-
-
 
