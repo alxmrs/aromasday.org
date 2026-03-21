@@ -253,6 +253,7 @@ blockquote {
   border-radius: var(--border-radius);
   box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
   position: relative;
+  max-width: var(--max-width);
 }
 
 blockquote:before {
