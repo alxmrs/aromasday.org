@@ -7,12 +7,9 @@ description-meta: A day in the country.
 
 > Aromas Day is on **August 30th, 2026**.
 
-> **Aromas Day booth applications will go live <u>April 9th, 2026</u>**.
+> **Aromas Day booth applications will go live <u>April, 2026</u>**.
 >
 > If you are a vendor, garage sale alley host, or nonprofit, please apply.
->
-> Express your interest with an email to [organizers@aromasday.org](mailto:organizers@aromasday.org)
-> and we'll let you know when the applications are open!
 
 ![](/assets/aromas-day-2025.png "A day in the country"){.banner}
 
