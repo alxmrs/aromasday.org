@@ -5,27 +5,29 @@ description-meta: A day in the country.
 
 #### Presented by the Aromas Eagles
 
-> Aromas Day is on **August 30th, 2026**.
+<!-- > Aromas Day is on **August 30th, 2026**. -->
 
 > **Aromas Day booth applications will go live <u>April 2026</u>**.
 >
 > If you are a vendor, garage sale alley host, or nonprofit, please apply.
 
-![](/assets/aromas-day-2025.png "A day in the country"){.banner}
-
-This year's Aromas Day celebration is currently being planned! Get ready for a good day in the country.
+This year's Aromas Day celebration is currently being planned! If you'd like to be involved, we meet at 7pm on the second Wednesday of every month at the Grange.
 
 We'll see you **August 30, 2026** for a fantastic day filled with music, delicious food, community and much more!
+
+![](/assets/aromas-day-2025.png "A day in the country"){.banner}
+
+
 
 ## Featuring
 
 - **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
 - **☮️ Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
-- **🪇 Live Music** - Come listen to local music of all kinds at the main stage at Marshall's.
+- **🪇 Live Music** - Come listen to local music of all kinds at the main stage.
 - **🧶 Vendors** - Local artisans with items of all kinds for sale.
 - **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
-- **👧 Kids Zone** - Activities for kids in the park! Come see performers and do a craft in the park.
-- **🏎️ Car Show** - Cool cars to admire in the church parking lot.
+- **👧 Kids Zone** - Activities for kids in the little park! Come see performers and do a craft in the shade.
+<!-- - **🏎️ Car Show** - Cool cars to admire in the church parking lot. -->
 
 
 <div class="full-bleed">
@@ -34,9 +36,9 @@ We'll see you **August 30, 2026** for a fantastic day filled with music, delicio
 <div class="sponsors">
 
 
-## Thanks to last year's Sponsors!
+## Thanks to last year's sponsors!
 
-We are so grateful to our 2025 Aromas Day sponsors, without whom Aromas Day wound not be possible.
+We are so grateful to our 2025 Aromas Day sponsors, without whom Aromas Day would not be possible.
 
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
 - ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
