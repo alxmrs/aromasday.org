@@ -3,7 +3,7 @@ title: Aromas Day
 description-meta: A day in the country.
 ---
 
-#### Presented by the Aromas Eagles
+#### Presented by the [Aromas Eagles](https://aromaseagles.org/)
 
 <!-- > Aromas Day is on **August 30th, 2026**. -->
 
