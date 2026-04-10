@@ -7,9 +7,9 @@ description-meta: A day in the country.
 
 <!-- > Aromas Day is on **August 30th, 2026**. -->
 
-> **Aromas Day booth applications will go live <u>April 2026</u>**.
+> **[Aromas Day booth applications are now live](https://forms.gle/dv34XfTkaF93wPLr8)**.
 >
-> If you are a vendor, garage sale alley host, or nonprofit, please apply.
+> If you are a vendor, garage sale alley host, or nonprofit, [please apply](https://forms.gle/dv34XfTkaF93wPLr8).
 
 This year's Aromas Day celebration is currently being planned! If you'd like to be involved, we meet at 7pm on the second Wednesday of every month at the Grange.
 
