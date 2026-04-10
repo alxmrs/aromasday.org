@@ -5,8 +5,6 @@ description-meta: A day in the country.
 
 #### Presented by the [Aromas Eagles](https://aromaseagles.org/)
 
-<!-- > Aromas Day is on **August 30th, 2026**. -->
-
 > **[Aromas Day booth applications are now live](https://forms.gle/dv34XfTkaF93wPLr8)**.
 >
 > If you are a vendor, garage sale alley host, or nonprofit, [please apply](https://forms.gle/dv34XfTkaF93wPLr8).
@@ -27,7 +25,6 @@ We'll see you **August 30, 2026** for a fantastic day filled with music, delicio
 - **🧶 Vendors** - Local artisans with items of all kinds for sale.
 - **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
 - **👧 Kids Zone** - Activities for kids in the little park! Come see performers and do a craft in the shade.
-<!-- - **🏎️ Car Show** - Cool cars to admire in the church parking lot. -->
 
 
 <div class="full-bleed">
