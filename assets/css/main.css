@@ -1,18 +1,76 @@
-/* Base styles with improved typography and spacing */
-@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:wght@300;400;600&display=swap');
+/* Aromas Day — Rodeo Poster
+   A nostalgic, western handbill: Rye wood-type headlines, Zilla Slab
+   slab-serif body, ALL-CAPS playbill labels, star dividers, double-rule
+   frames, ticket-style buttons, and a faintly printed paper grain. */
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 html {
-  scroll-padding-top: 80px; /* Adjust based on your nav height + desired spacing */
+  scroll-padding-top: 90px; /* nav height + breathing room */
 }
 
 :root {
-  --color-dark-green: #4f5432;
-  --color-light-green: #616547;
-  --color-cream: #eae3d1;
-  --color-light-orange: #c48c6c;
-  --color-dark-orange: #955032;
-  --max-width: 800px;
-  --border-radius: 8px;
+  /* Core ink + paper */
+  --color-ink: #241c12;
+  --color-cream: #f2e7cd;
+  --color-paper: #fbf3df;
+
+  /* Boot leather */
+  --color-boot: #8a4f28;
+  --color-boot-dark: #5c3418;
+
+  /* California poppy — the second "ink" on the poster */
+  --color-poppy: #e0621b;
+  --color-poppy-dark: #b8420f;
+
+  /* Boot scrollwork turquoise + stems + bee (used sparingly) */
+  --color-teal: #2a8f9c;
+  --color-teal-dark: #1d6d78;
+  --color-leaf: #4c7a34;
+  --color-yellow: #e8b21e;
+
+  /* Legacy aliases (kept so older markup still resolves) */
+  --color-dark-green: var(--color-ink);
+  --color-light-green: var(--color-boot-dark);
+  --color-light-orange: var(--color-poppy);
+  --color-dark-orange: var(--color-poppy-dark);
+
+  --max-width: 820px;
+  --border-radius: 2px;
+
+  /* Type */
+  --font-display: 'Rye', 'Zilla Slab', serif;
+  --font-body: 'Zilla Slab', Georgia, serif;
+
+  /* Semantic tokens — the theme swaps these for dark mode.
+     Nav + footer stay "leather chrome" and read well in both modes. */
+  --bg: var(--color-cream);              /* page canvas */
+  --surface: var(--color-paper);         /* cards + framed images */
+  --text: var(--color-ink);              /* body + headings */
+  --text-muted: var(--color-boot-dark);  /* kickers, subtitles */
+  --rule: var(--color-ink);              /* frames + double-rule lines */
+  --band: #e7cfa0;                       /* full-bleed panel */
+  --tile: #ffffff;                       /* sponsor logo tiles */
+  --paper-blend: multiply;               /* how the grain sits on the canvas */
+}
+
+/* ── Dark mode ─────────────────────────────────────────────────────────
+   Swap only the semantic tokens + brighten the poppy accents so they hold
+   contrast on a dark, warm-leather canvas. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1710;
+    --surface: #2a2017;
+    --text: #f1e7d0;
+    --text-muted: #cdae83;
+    --rule: #e6d8ba;
+    --band: #2c2118;
+    --tile: #ece4d2;
+    --paper-blend: soft-light;
+
+    /* Brighten the "poppy ink" for accents + links on dark */
+    --color-poppy: #f2833c;
+    --color-poppy-dark: #ef7a34;
+  }
 }
 
 * {
@@ -23,18 +81,23 @@ html {
 
 body {
   margin: 0;
-  line-height: 1.8;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
-  color: var(--color-dark-green);
-  background-color: var(--color-cream);
+  line-height: 1.7;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 17px;
+  color: var(--text);
+  background-color: var(--bg);
+  /* Faint printed-paper grain layered over the canvas */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-blend-mode: var(--paper-blend);
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* Main content container to ensure consistent centering */
-main, header, #title-block-header, body > p, body > ul, body > h2 {
+main, header, #title-block-header, body > p, body > ul, body > h2, body > h4 {
   width: 100%;
   max-width: var(--max-width);
   padding: 0 20px;
@@ -49,25 +112,109 @@ main, header, #title-block-header, body > p, body > ul, body > h2 {
 
 /* Typography */
 h1, h2, h3 {
-  color: var(--color-light-green);
-  font-family: "Chicle", serif;
+  font-family: var(--font-display);
   font-weight: 400;
+  color: var(--text);
+  line-height: 1.05;
   margin: 1.5rem 0 1rem 0;
-  line-height: 1.2;
 }
 
-h1 {
-  font-size: 3.5rem;
+/* Masthead — the poster title inside a double-rule band with a star row */
+#title-block-header {
   text-align: center;
-  margin-top: 2rem;
+  margin: 1.5rem auto 0.5rem;
+  padding: 1.25rem 20px 1.1rem;
+  border-top: 7px double var(--rule);
+  border-bottom: 7px double var(--rule);
 }
 
+#title-block-header::before {
+  content: "\2605  \00b7  \2605  \00b7  \2605";
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 700;
+  color: var(--color-poppy-dark);
+  letter-spacing: 0.4em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  text-indent: 0.4em;
+}
+
+h1, h1.title {
+  font-family: var(--font-display);
+  font-size: 4.25rem;
+  text-align: center;
+  margin: 0;
+  color: var(--text);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 rgba(92, 52, 24, 0.18);
+}
+
+/* Section headers — centered playbill style with star trio + double rule */
 h2 {
-  font-size: 2.5rem;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
+}
+
+h2::before {
+  content: "\2726  \2726  \2726";
+  display: block;
+  font-size: 0.5em;
+  letter-spacing: 0.35em;
+  color: var(--color-poppy-dark);
+  margin-bottom: 0.35rem;
+  text-indent: 0.35em;
+}
+
+h2::after {
+  content: "";
+  display: block;
+  width: 140px;
+  height: 0;
+  border-bottom: 5px double var(--rule);
+  margin: 0.55rem auto 0;
 }
 
 h3 {
-  font-size: 1.8rem;
+  font-size: 1.5rem;
+  color: var(--text-muted);
+}
+
+/* Presented-by / kicker line — playbill subtitle */
+h4 {
+  font-family: var(--font-body);
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
+  text-align: center;
+  color: var(--text-muted);
+  margin-top: 0.9rem;
+}
+
+h4::before { content: "\2014\00a0\00a0"; color: var(--color-poppy); }
+h4::after  { content: "\00a0\00a0\2014"; color: var(--color-poppy); }
+
+/* Motto — the "A Day in the Country" tagline beneath the masthead */
+.tagline {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  line-height: 1.1;
+  color: var(--color-poppy-dark);
+  margin: 0.7rem auto 0.1rem;
+}
+
+.tagline p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 1.45rem;
+  }
 }
 
 p {
@@ -75,220 +222,255 @@ p {
 }
 
 a {
-  color: var(--color-dark-orange);
+  color: var(--color-poppy-dark);
   text-decoration: none;
   font-weight: 600;
   transition: color 0.2s ease;
 }
 
 a:hover {
-  color: var(--color-light-orange);
+  color: var(--color-poppy);
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
-
 .full-bleed a:hover {
-  color: var(--color-dark-green);
+  color: var(--color-poppy);
   text-decoration: underline;
 }
 
 table {
-    padding: 20px;
+  padding: 20px;
 }
 
 td {
-    padding: 10px;
+  padding: 10px;
 }
 
-/* Navigation - Updated for hamburger menu */
-        nav {
-          background-color: var(--color-dark-orange);
-          padding: 15px 0;
-          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-          position: sticky;
-          top: 0;
-          z-index: 100;
-          width: 100%;
-        }
+/* Navigation — a saloon-sign bar with a double-rule bottom edge */
+nav {
+  background-color: var(--color-boot-dark);
+  padding: 14px 0;
+  border-bottom: 6px double var(--color-ink);
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  width: 100%;
+}
 
-        .nav-container {
-          max-width: var(--max-width);
-          margin: 0 auto;
-          padding: 0 20px;
-          display: flex;
-          justify-content: space-between;
-          align-items: center;
-        }
+.nav-container {
+  max-width: var(--max-width);
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
 
-        .hamburger {
-          display: none;
-          flex-direction: column;
-          cursor: pointer;
-          padding: 5px;
-        }
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  padding: 5px;
+}
 
-        .hamburger span {
-          width: 25px;
-          height: 3px;
-          background-color: var(--color-cream);
-          margin: 3px 0;
-          transition: 0.3s;
-          border-radius: 2px;
-        }
+.hamburger span {
+  width: 25px;
+  height: 3px;
+  background-color: var(--color-cream);
+  margin: 3px 0;
+  transition: 0.3s;
+  border-radius: 2px;
+}
 
-        /* Hamburger animation */
-        .hamburger.active span:nth-child(1) {
-          transform: rotate(-45deg) translate(-5px, 6px);
-        }
+/* Hamburger animation */
+.hamburger.active span:nth-child(1) {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
 
-        .hamburger.active span:nth-child(2) {
-          opacity: 0;
-        }
+.hamburger.active span:nth-child(2) {
+  opacity: 0;
+}
 
-        .hamburger.active span:nth-child(3) {
-          transform: rotate(45deg) translate(-5px, -6px);
-        }
+.hamburger.active span:nth-child(3) {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
 
-        nav ul {
-          padding: 0;
-          list-style: none;
-          display: flex;
-          justify-content: center;
-          align-items: center;
-        }
+nav ul {
+  padding: 0;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
 
-        nav ul li {
-          margin-right: 20px;
-        }
+nav ul li {
+  margin-right: 10px;
+}
 
-        nav ul li:last-child {
-          margin-right: 0;
-        }
+nav ul li:last-child {
+  margin-right: 0;
+}
 
-        nav ul li a {
-          color: var(--color-cream);
-          font-weight: 600;
-          text-transform: uppercase;
-          letter-spacing: 0.5px;
-          font-size: 0.9rem;
-          padding: 8px 12px;
-          border-radius: var(--border-radius);
-          transition: background-color 0.2s ease;
-        }
+nav ul li a {
+  color: var(--color-cream);
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
+  padding: 8px 14px;
+  border-radius: var(--border-radius);
+  transition: background-color 0.2s ease, color 0.2s ease;
+}
 
-        nav ul li a:hover {
-          background-color: rgba(254, 250, 224, 0.2);
-          text-decoration: none;
-        }
+nav ul li a:hover {
+  background-color: var(--color-poppy);
+  color: var(--color-cream);
+  text-decoration: none;
+}
 
-        /* Mobile Styles */
-        @media (max-width: 768px) {
-          .hamburger {
-            display: flex;
-          }
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
 
-          nav ul {
-            position: fixed;
-            top: 70px;
-            left: -100%;
-            width: 100%;
-            height: calc(100vh - 70px);
-            background-color: var(--color-dark-orange);
-            flex-direction: column;
-            justify-content: flex-start;
-            align-items: center;
-            transition: left 0.3s ease;
-            padding-top: 2rem;
-          }
+  nav ul {
+    position: fixed;
+    top: 65px;
+    left: -100%;
+    width: 100%;
+    height: calc(100vh - 65px);
+    background-color: var(--color-boot-dark);
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    transition: left 0.3s ease;
+    padding-top: 2rem;
+  }
 
-          nav ul.active {
-            left: 0;
-          }
+  nav ul.active {
+    left: 0;
+  }
 
-          nav ul li {
-            margin: 0;
-            margin-bottom: 1.5rem;
-            width: 100%;
-            text-align: center;
-          }
+  nav ul li {
+    margin: 0;
+    margin-bottom: 1.5rem;
+    width: 100%;
+    text-align: center;
+  }
 
-          nav ul li a {
-            display: block;
-            padding: 15px 20px;
-            font-size: 1.1rem;
-            width: 100%;
-            border-radius: 0;
-            border-bottom: 1px solid rgba(254, 250, 224, 0.1);
-          }
+  nav ul li a {
+    display: block;
+    padding: 15px 20px;
+    font-size: 1.1rem;
+    width: 100%;
+    border-radius: 0;
+    border-bottom: 1px solid rgba(242, 231, 205, 0.15);
+  }
 
-          nav ul li:last-child a {
-            border-bottom: none;
-          }
+  nav ul li:last-child a {
+    border-bottom: none;
+  }
 
-          nav ul li a:hover {
-            background-color: rgba(254, 250, 224, 0.1);
-          }
-        }
+  nav ul li a:hover {
+    background-color: rgba(224, 98, 27, 0.25);
+    color: var(--color-cream);
+  }
+}
 
 /* Header */
 header {
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
 
-/* Full-bleed sections */
+/* Hero logo — the poppy-boot illustration, centered.
+   Wrapped in <picture> (WebP with PNG fallback); the wrapper stays a
+   block so the <img class="banner"> keeps centering via auto margins. */
+.banner-pic {
+  display: block;
+  text-align: center;
+}
+
+.banner {
+  max-width: 400px;
+  width: 100%;
+  margin: 1.75rem auto 2.5rem;
+  border: none;
+  padding: 0;
+  background: none;
+  box-shadow: none;
+  border-radius: 0;
+  filter: drop-shadow(5px 7px 5px rgba(36, 28, 18, 0.22));
+}
+
+/* Full-bleed sections — a warm handbill panel with double-rule edges */
 .full-bleed {
   width: 100%;
-  background-color: var(--color-light-orange);
-  padding: 3rem 0;
-  margin: 3rem 0;
+  background-color: var(--band);
+  border-top: 6px double var(--rule);
+  border-bottom: 6px double var(--rule);
+  padding: 2.5rem 0 3rem;
+  margin: 3.5rem 0;
 }
 
-/* Enhanced blockquote for announcements */
+/* Announcement — a framed NOTICE handbill with a label breaking the rule */
 blockquote {
-  background-color: rgba(255, 255, 255, 0.6);
-  border-left: 6px solid var(--color-light-green);
-  margin: 2rem 0;
-  padding: 1.5rem 2rem;
+  background-color: var(--surface);
+  border: 5px double var(--rule);
   border-radius: var(--border-radius);
-  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.05);
+  margin: 2.5rem 0 2rem;
+  padding: 1.9rem 2rem 1.5rem;
   position: relative;
   max-width: var(--max-width);
+  text-align: center;
 }
 
-blockquote:before {
-  font-size: 4em;
-  color: var(--color-light-green);
-  opacity: 0.3;
+blockquote::before {
+  content: "\2726\00a0\00a0N O T I C E\00a0\00a0\2726";
   position: absolute;
-  left: 10px;
-  top: -10px;
+  top: -0.72em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--bg);
+  padding: 0 0.85em;
+  color: var(--color-poppy-dark);
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  white-space: nowrap;
 }
 
 blockquote p {
   font-size: 1.1rem;
-  margin: 0;
+  margin: 0 0 0.4rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 blockquote strong {
-  color: var(--color-dark-orange);
+  color: var(--color-poppy-dark);
 }
 
-/* Images */
+/* Images — framed with a double rule like a pinned print */
 img {
   max-width: 100%;
   height: auto;
   border-radius: var(--border-radius);
   display: block;
   margin: 1.5rem auto;
-  box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+  border: 5px double var(--rule);
+  padding: 6px;
+  background-color: var(--surface);
 }
 
-.banner {
-    box-shadow: unset;
-}
-
-/* Features list */
+/* Features list — "Bill of Events" with star bullets */
 #featuring {
   margin-top: 2.5rem;
 }
@@ -302,25 +484,29 @@ ul li {
   position: relative;
 }
 
+#featuring + ul {
+  padding-left: 0;
+  max-width: 620px;
+  margin: 1.5rem auto 0;
+}
+
 #featuring + ul li {
   list-style: none;
-  padding-left: 1.5rem;
+  padding-left: 2rem;
 }
 
 #featuring + ul li::before {
-  content: "";
+  content: "\2726";
   position: absolute;
-  left: 0;
-  top: 0.5rem;
-  width: 8px;
-  height: 8px;
-  background-color: var(--color-light-green);
-  border-radius: 50%;
+  left: 0.25rem;
+  top: 0.05rem;
+  color: var(--color-poppy-dark);
+  font-size: 1rem;
 }
 
 /* Sponsors section */
 .sponsors {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .sponsors ul {
@@ -330,7 +516,7 @@ ul li {
   justify-content: center;
   gap: 2rem;
   padding: 0;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 
 .sponsors ul li {
@@ -341,28 +527,32 @@ ul li {
 }
 
 .sponsors ul li:hover {
-  transform: scale(1.05);
+  transform: translateY(-3px);
 }
 
 .sponsors ul li img {
   max-width: 100%;
   height: auto;
-  filter: grayscale(20%);
+  padding: 0.7rem;
+  background-color: var(--tile);
+  border: 4px double var(--rule);
+  border-radius: var(--border-radius);
+  filter: grayscale(30%) sepia(12%);
   transition: filter 0.3s ease;
-  background-color: white;
 }
 
-.sponsors ul li img:hover {
-  filter: grayscale(0%);
+.sponsors ul li:hover img {
+  filter: grayscale(0%) sepia(0%);
 }
 
-/* Footer Styles - Add to your existing CSS */
+/* Footer — weathered leather with double-rule accents */
 footer {
-  background-color: var(--color-dark-orange);
+  background-color: var(--color-boot-dark);
   color: var(--color-cream);
   width: 100%;
   padding: 0;
   margin-top: 4rem;
+  border-top: 6px double var(--color-ink);
 }
 
 .footer-content {
@@ -382,7 +572,11 @@ footer {
 }
 
 .footer-section h3 {
-  font-size: 1.8rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.15rem;
   margin-bottom: 1.2rem;
   color: var(--color-cream);
   position: relative;
@@ -394,15 +588,15 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 50px;
-  height: 3px;
-  background-color: var(--color-light-orange);
+  width: 60px;
+  height: 0;
+  border-bottom: 4px double var(--color-poppy);
 }
 
 .footer-section p {
   font-size: 0.95rem;
-  line-height: 1.6;
-  opacity: 0.9;
+  line-height: 1.65;
+  opacity: 0.92;
 }
 
 .footer-section.about {
@@ -429,26 +623,26 @@ footer {
 .footer-section.links ul li {
   margin-bottom: 0.8rem;
   position: relative;
-  padding-left: 1rem;
+  padding-left: 1.5rem;
 }
 
 .footer-section.links ul li::before {
-  content: "→";
+  content: "\261e"; /* pointing hand */
   position: absolute;
   left: 0;
-  color: var(--color-light-orange);
+  color: var(--color-poppy);
 }
 
 .footer-section.links a,
 .contact a {
   color: var(--color-cream);
   text-decoration: none;
-  transition: all 0.3s ease;
+  transition: color 0.2s ease;
 }
 
 .footer-section.links a:hover,
 .contact a:hover {
-  color: var(--color-light-orange);
+  color: var(--color-yellow);
   text-decoration: underline;
 }
 
@@ -460,30 +654,37 @@ footer {
   gap: 1rem;
 }
 
+/* Buttons — "Admit One" tickets: stamped ink with a cream inner rule */
 .footer-button {
   display: inline-block;
-  background-color: var(--color-light-green);
+  background-color: var(--color-poppy);
   color: var(--color-cream);
-  padding: 10px 16px;
+  padding: 13px 22px;
+  border: 2px solid var(--color-ink);
   border-radius: var(--border-radius);
+  box-shadow: inset 0 0 0 2px var(--color-cream), inset 0 0 0 4px var(--color-poppy);
   text-decoration: none;
-  font-weight: 600;
-  font-size: 0.95rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
   text-align: center;
-  transition: all 0.3s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .footer-button:hover {
-  background-color: #4a5a2a;
-  transform: translateY(-2px);
-  text-decoration: none;
+  background-color: var(--color-ink);
   color: var(--color-cream);
+  text-decoration: none;
+  box-shadow: inset 0 0 0 2px var(--color-cream), inset 0 0 0 4px var(--color-ink);
 }
 
 .footer-bottom {
-  background-color: rgba(0, 0, 0, 0.15);
+  background-color: rgba(0, 0, 0, 0.22);
   padding: 1.5rem 20px;
   text-align: center;
+  border-top: 3px double rgba(242, 231, 205, 0.35);
 }
 
 .social-icons {
@@ -492,26 +693,29 @@ footer {
 
 .social-icon {
   display: inline-block;
-  width: 36px;
-  height: 36px;
+  width: 40px;
+  height: 40px;
   line-height: 36px;
   text-align: center;
-  background-color: rgba(255, 255, 255, 0.1);
+  background-color: var(--color-boot);
+  border: 2px solid var(--color-cream);
   border-radius: 50%;
-  margin: 0 5px;
+  margin: 0 6px;
   color: var(--color-cream);
-  transition: all 0.3s ease;
+  transition: transform 0.2s ease, background-color 0.2s ease;
 }
 
 .social-icon:hover {
-  background-color: var(--color-light-orange);
+  background-color: var(--color-poppy);
+  color: var(--color-cream);
   transform: translateY(-3px);
 }
 
 .copyright {
   font-size: 0.85rem;
-  opacity: 0.8;
+  opacity: 0.85;
   margin: 0;
+  letter-spacing: 0.3px;
 }
 
 .copyright a {
@@ -520,18 +724,20 @@ footer {
 }
 
 .copyright a:hover {
-  color: var(--color-light-orange);
+  color: var(--color-yellow);
 }
 
 /* Simple icons using pseudo-elements */
 .icon-calendar::before {
-  content: "📅";
-  margin-right: 5px;
+  content: "\2605";
+  margin-right: 6px;
+  color: var(--color-poppy);
 }
 
 .icon-email::before {
-  content: "📧";
-  margin-right: 5px;
+  content: "\2709";
+  margin-right: 6px;
+  color: var(--color-poppy);
 }
 
 .icon-facebook::before {
@@ -540,11 +746,11 @@ footer {
 }
 
 .icon-instagram::before {
-  content: "📷";
+  content: "\25c9";
 }
 
 .icon-rss::before {
-  content: "📰";
+  content: "\27a4";
 }
 
 /* Responsive adjustments */
@@ -565,12 +771,12 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.8rem;
+  h1, h1.title {
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .sponsors ul li {
@@ -579,12 +785,16 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
+  h1, h1.title {
+    font-size: 2.4rem;
   }
 
   body {
-    font-size: 15px;
+    font-size: 16px;
+  }
+
+  .banner {
+    max-width: 290px;
   }
 
   .sponsors ul li {
@@ -593,10 +803,27 @@ footer {
   }
 
   blockquote {
-    padding: 1rem 1.5rem;
+    padding: 1.6rem 1.4rem 1.2rem;
+  }
+}
+
+/* ── Dark-mode component overrides ──────────────────────────────────────
+   Placed after the base rules so they win on source order. The hero logo
+   is a transparent illustration with black outlines that would vanish on a
+   dark canvas — so mount it on a light "pinned print" card. */
+@media (prefers-color-scheme: dark) {
+  .banner {
+    max-width: 400px;
+    background: #f3ead4;
+    padding: 20px 26px;
+    border: 5px double var(--rule);
+    border-radius: 6px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.55));
   }
 
-  blockquote:before {
-    font-size: 3em;
+  @media (max-width: 480px) {
+    .banner {
+      max-width: 290px;
+    }
   }
 }
