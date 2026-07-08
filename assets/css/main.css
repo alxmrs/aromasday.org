@@ -40,6 +40,37 @@ html {
   /* Type */
   --font-display: 'Rye', 'Zilla Slab', serif;
   --font-body: 'Zilla Slab', Georgia, serif;
+
+  /* Semantic tokens — the theme swaps these for dark mode.
+     Nav + footer stay "leather chrome" and read well in both modes. */
+  --bg: var(--color-cream);              /* page canvas */
+  --surface: var(--color-paper);         /* cards + framed images */
+  --text: var(--color-ink);              /* body + headings */
+  --text-muted: var(--color-boot-dark);  /* kickers, subtitles */
+  --rule: var(--color-ink);              /* frames + double-rule lines */
+  --band: #e7cfa0;                       /* full-bleed panel */
+  --tile: #ffffff;                       /* sponsor logo tiles */
+  --paper-blend: multiply;               /* how the grain sits on the canvas */
+}
+
+/* ── Dark mode ─────────────────────────────────────────────────────────
+   Swap only the semantic tokens + brighten the poppy accents so they hold
+   contrast on a dark, warm-leather canvas. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --bg: #1d1710;
+    --surface: #2a2017;
+    --text: #f1e7d0;
+    --text-muted: #cdae83;
+    --rule: #e6d8ba;
+    --band: #2c2118;
+    --tile: #ece4d2;
+    --paper-blend: soft-light;
+
+    /* Brighten the "poppy ink" for accents + links on dark */
+    --color-poppy: #f2833c;
+    --color-poppy-dark: #ef7a34;
+  }
 }
 
 * {
@@ -54,12 +85,12 @@ body {
   font-family: var(--font-body);
   font-weight: 400;
   font-size: 17px;
-  color: var(--color-ink);
-  background-color: var(--color-cream);
-  /* Faint printed-paper grain layered over the cream */
+  color: var(--text);
+  background-color: var(--bg);
+  /* Faint printed-paper grain layered over the canvas */
   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
   background-repeat: repeat;
-  background-blend-mode: multiply;
+  background-blend-mode: var(--paper-blend);
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -83,7 +114,7 @@ main, header, #title-block-header, body > p, body > ul, body > h2, body > h4 {
 h1, h2, h3 {
   font-family: var(--font-display);
   font-weight: 400;
-  color: var(--color-ink);
+  color: var(--text);
   line-height: 1.05;
   margin: 1.5rem 0 1rem 0;
 }
@@ -93,8 +124,8 @@ h1, h2, h3 {
   text-align: center;
   margin: 1.5rem auto 0.5rem;
   padding: 1.25rem 20px 1.1rem;
-  border-top: 7px double var(--color-ink);
-  border-bottom: 7px double var(--color-ink);
+  border-top: 7px double var(--rule);
+  border-bottom: 7px double var(--rule);
 }
 
 #title-block-header::before {
@@ -114,7 +145,7 @@ h1, h1.title {
   font-size: 4.25rem;
   text-align: center;
   margin: 0;
-  color: var(--color-ink);
+  color: var(--text);
   letter-spacing: 1px;
   text-shadow: 2px 2px 0 rgba(92, 52, 24, 0.18);
 }
@@ -142,13 +173,13 @@ h2::after {
   display: block;
   width: 140px;
   height: 0;
-  border-bottom: 5px double var(--color-ink);
+  border-bottom: 5px double var(--rule);
   margin: 0.55rem auto 0;
 }
 
 h3 {
   font-size: 1.5rem;
-  color: var(--color-boot-dark);
+  color: var(--text-muted);
 }
 
 /* Presented-by / kicker line — playbill subtitle */
@@ -159,7 +190,7 @@ h4 {
   letter-spacing: 2px;
   font-size: 0.9rem;
   text-align: center;
-  color: var(--color-boot-dark);
+  color: var(--text-muted);
   margin-top: 0.9rem;
 }
 
@@ -198,13 +229,13 @@ a {
 }
 
 a:hover {
-  color: var(--color-boot-dark);
+  color: var(--color-poppy);
   text-decoration: underline;
   text-decoration-thickness: 2px;
 }
 
 .full-bleed a:hover {
-  color: var(--color-boot-dark);
+  color: var(--color-poppy);
   text-decoration: underline;
 }
 
@@ -371,17 +402,17 @@ header {
 /* Full-bleed sections — a warm handbill panel with double-rule edges */
 .full-bleed {
   width: 100%;
-  background-color: #e7cfa0;
-  border-top: 6px double var(--color-ink);
-  border-bottom: 6px double var(--color-ink);
+  background-color: var(--band);
+  border-top: 6px double var(--rule);
+  border-bottom: 6px double var(--rule);
   padding: 2.5rem 0 3rem;
   margin: 3.5rem 0;
 }
 
 /* Announcement — a framed NOTICE handbill with a label breaking the rule */
 blockquote {
-  background-color: var(--color-paper);
-  border: 5px double var(--color-ink);
+  background-color: var(--surface);
+  border: 5px double var(--rule);
   border-radius: var(--border-radius);
   margin: 2.5rem 0 2rem;
   padding: 1.9rem 2rem 1.5rem;
@@ -396,7 +427,7 @@ blockquote::before {
   top: -0.72em;
   left: 50%;
   transform: translateX(-50%);
-  background-color: var(--color-cream);
+  background-color: var(--bg);
   padding: 0 0.85em;
   color: var(--color-poppy-dark);
   font-family: var(--font-body);
@@ -427,9 +458,9 @@ img {
   border-radius: var(--border-radius);
   display: block;
   margin: 1.5rem auto;
-  border: 5px double var(--color-ink);
+  border: 5px double var(--rule);
   padding: 6px;
-  background-color: var(--color-paper);
+  background-color: var(--surface);
 }
 
 /* Features list — "Bill of Events" with star bullets */
@@ -496,8 +527,8 @@ ul li {
   max-width: 100%;
   height: auto;
   padding: 0.7rem;
-  background-color: #fff;
-  border: 4px double var(--color-ink);
+  background-color: var(--tile);
+  border: 4px double var(--rule);
   border-radius: var(--border-radius);
   filter: grayscale(30%) sepia(12%);
   transition: filter 0.3s ease;
@@ -766,5 +797,26 @@ footer {
 
   blockquote {
     padding: 1.6rem 1.4rem 1.2rem;
+  }
+}
+
+/* ── Dark-mode component overrides ──────────────────────────────────────
+   Placed after the base rules so they win on source order. The hero logo
+   is a transparent illustration with black outlines that would vanish on a
+   dark canvas — so mount it on a light "pinned print" card. */
+@media (prefers-color-scheme: dark) {
+  .banner {
+    max-width: 400px;
+    background: #f3ead4;
+    padding: 20px 26px;
+    border: 5px double var(--rule);
+    border-radius: 6px;
+    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.55));
+  }
+
+  @media (max-width: 480px) {
+    .banner {
+      max-width: 290px;
+    }
   }
 }
