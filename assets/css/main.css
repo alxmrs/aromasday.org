@@ -1,8 +1,8 @@
-/* Aromas Day — 2026 refresh
-   Palette + styling drawn from the poppy-in-a-cowboy-boot logo:
-   vivid poppy orange, turquoise, boot-brown, leaf green, bee yellow,
-   warm cream, and bold black ink outlines. */
-@import url('https://fonts.googleapis.com/css2?family=Chicle&family=Poppins:wght@300;400;600;700&display=swap');
+/* Aromas Day — Rodeo Poster
+   A nostalgic, western handbill: Rye wood-type headlines, Zilla Slab
+   slab-serif body, ALL-CAPS playbill labels, star dividers, double-rule
+   frames, ticket-style buttons, and a faintly printed paper grain. */
+@import url('https://fonts.googleapis.com/css2?family=Rye&family=Zilla+Slab:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap');
 
 html {
   scroll-padding-top: 90px; /* nav height + breathing room */
@@ -10,25 +10,23 @@ html {
 
 :root {
   /* Core ink + paper */
-  --color-ink: #201c16;
-  --color-cream: #f4ecd6;
-  --color-paper: #fbf5e6;
+  --color-ink: #241c12;
+  --color-cream: #f2e7cd;
+  --color-paper: #fbf3df;
 
   /* Boot leather */
-  --color-boot: #9c5a2c;
-  --color-boot-dark: #6d3d1c;
+  --color-boot: #8a4f28;
+  --color-boot-dark: #5c3418;
 
-  /* California poppy */
-  --color-poppy: #f47b20;
-  --color-poppy-dark: #d95f12;
+  /* California poppy — the second "ink" on the poster */
+  --color-poppy: #e0621b;
+  --color-poppy-dark: #b8420f;
 
-  /* Boot scrollwork turquoise */
-  --color-teal: #1fa9ba;
-  --color-teal-dark: #16808f;
-
-  /* Stems + bee */
-  --color-leaf: #2f8b3d;
-  --color-yellow: #f9c400;
+  /* Boot scrollwork turquoise + stems + bee (used sparingly) */
+  --color-teal: #2a8f9c;
+  --color-teal-dark: #1d6d78;
+  --color-leaf: #4c7a34;
+  --color-yellow: #e8b21e;
 
   /* Legacy aliases (kept so older markup still resolves) */
   --color-dark-green: var(--color-ink);
@@ -37,9 +35,11 @@ html {
   --color-dark-orange: var(--color-poppy-dark);
 
   --max-width: 820px;
-  --border-radius: 12px;
-  --shadow-hard: 4px 4px 0 var(--color-ink);
-  --border-ink: 3px solid var(--color-ink);
+  --border-radius: 2px;
+
+  /* Type */
+  --font-display: 'Rye', 'Zilla Slab', serif;
+  --font-body: 'Zilla Slab', Georgia, serif;
 }
 
 * {
@@ -50,18 +50,23 @@ html {
 
 body {
   margin: 0;
-  line-height: 1.8;
-  font-family: 'Poppins', sans-serif;
-  font-size: 16px;
+  line-height: 1.7;
+  font-family: var(--font-body);
+  font-weight: 400;
+  font-size: 17px;
   color: var(--color-ink);
   background-color: var(--color-cream);
+  /* Faint printed-paper grain layered over the cream */
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.5'/%3E%3C/svg%3E");
+  background-repeat: repeat;
+  background-blend-mode: multiply;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 
 /* Main content container to ensure consistent centering */
-main, header, #title-block-header, body > p, body > ul, body > h2 {
+main, header, #title-block-header, body > p, body > ul, body > h2, body > h4 {
   width: 100%;
   max-width: var(--max-width);
   padding: 0 20px;
@@ -76,53 +81,90 @@ main, header, #title-block-header, body > p, body > ul, body > h2 {
 
 /* Typography */
 h1, h2, h3 {
-  font-family: "Chicle", serif;
+  font-family: var(--font-display);
   font-weight: 400;
-  color: var(--color-boot-dark);
+  color: var(--color-ink);
+  line-height: 1.05;
   margin: 1.5rem 0 1rem 0;
-  line-height: 1.1;
 }
 
-h1 {
-  font-size: 3.75rem;
+/* Masthead — the poster title inside a double-rule band with a star row */
+#title-block-header {
   text-align: center;
-  margin-top: 2rem;
+  margin: 1.5rem auto 0.5rem;
+  padding: 1.25rem 20px 1.1rem;
+  border-top: 7px double var(--color-ink);
+  border-bottom: 7px double var(--color-ink);
+}
+
+#title-block-header::before {
+  content: "\2605  \00b7  \2605  \00b7  \2605";
+  display: block;
+  font-family: var(--font-body);
+  font-weight: 700;
   color: var(--color-poppy-dark);
-  text-shadow: 2px 2px 0 rgba(32, 28, 22, 0.12);
+  letter-spacing: 0.4em;
+  font-size: 0.85rem;
+  margin-bottom: 0.5rem;
+  text-indent: 0.4em;
 }
 
+h1, h1.title {
+  font-family: var(--font-display);
+  font-size: 4.25rem;
+  text-align: center;
+  margin: 0;
+  color: var(--color-ink);
+  letter-spacing: 1px;
+  text-shadow: 2px 2px 0 rgba(92, 52, 24, 0.18);
+}
+
+/* Section headers — centered playbill style with star trio + double rule */
 h2 {
-  font-size: 2.5rem;
-  position: relative;
-  padding-bottom: 0.4rem;
+  font-size: 2.4rem;
+  text-align: center;
+  margin-top: 2.5rem;
+  padding-bottom: 0.5rem;
 }
 
-/* Playful hand-inked underline on section headings */
+h2::before {
+  content: "\2726  \2726  \2726";
+  display: block;
+  font-size: 0.5em;
+  letter-spacing: 0.35em;
+  color: var(--color-poppy-dark);
+  margin-bottom: 0.35rem;
+  text-indent: 0.35em;
+}
+
 h2::after {
   content: "";
   display: block;
-  width: 64px;
-  height: 5px;
-  margin-top: 0.4rem;
-  background-color: var(--color-poppy);
-  border-radius: 3px;
+  width: 140px;
+  height: 0;
+  border-bottom: 5px double var(--color-ink);
+  margin: 0.55rem auto 0;
 }
 
 h3 {
-  font-size: 1.8rem;
-  color: var(--color-teal-dark);
+  font-size: 1.5rem;
+  color: var(--color-boot-dark);
 }
 
-/* Presented-by / kicker line */
+/* Presented-by / kicker line — playbill subtitle */
 h4 {
-  font-family: 'Poppins', sans-serif;
+  font-family: var(--font-body);
   font-weight: 600;
   text-transform: uppercase;
-  letter-spacing: 1.5px;
-  font-size: 0.95rem;
+  letter-spacing: 2px;
+  font-size: 0.9rem;
   text-align: center;
-  color: var(--color-boot);
+  color: var(--color-boot-dark);
+  margin-top: 0.9rem;
 }
+
+h4::before { content: "\2014\00a0\00a0"; color: var(--color-poppy); }
+h4::after  { content: "\00a0\00a0\2014"; color: var(--color-poppy); }
 
 p {
   margin-bottom: 1.2rem;
@@ -136,8 +178,9 @@ a {
 }
 
 a:hover {
-  color: var(--color-teal-dark);
+  color: var(--color-boot-dark);
   text-decoration: underline;
+  text-decoration-thickness: 2px;
 }
 
 .full-bleed a:hover {
@@ -153,12 +196,11 @@ td {
   padding: 10px;
 }
 
-/* Navigation — boot-leather bar with an inked bottom edge */
+/* Navigation — a saloon-sign bar with a double-rule bottom edge */
 nav {
-  background-color: var(--color-boot);
-  padding: 15px 0;
-  border-bottom: var(--border-ink);
-  box-shadow: 0 3px 0 rgba(32, 28, 22, 0.12);
+  background-color: var(--color-boot-dark);
+  padding: 14px 0;
+  border-bottom: 6px double var(--color-ink);
   position: sticky;
   top: 0;
   z-index: 100;
@@ -212,7 +254,7 @@ nav ul {
 }
 
 nav ul li {
-  margin-right: 12px;
+  margin-right: 10px;
 }
 
 nav ul li:last-child {
@@ -221,18 +263,19 @@ nav ul li:last-child {
 
 nav ul li a {
   color: var(--color-cream);
-  font-weight: 600;
+  font-family: var(--font-body);
+  font-weight: 700;
   text-transform: uppercase;
-  letter-spacing: 0.5px;
-  font-size: 0.9rem;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
   padding: 8px 14px;
   border-radius: var(--border-radius);
   transition: background-color 0.2s ease, color 0.2s ease;
 }
 
 nav ul li a:hover {
-  background-color: var(--color-yellow);
-  color: var(--color-boot-dark);
+  background-color: var(--color-poppy);
+  color: var(--color-cream);
   text-decoration: none;
 }
 
@@ -244,11 +287,11 @@ nav ul li a:hover {
 
   nav ul {
     position: fixed;
-    top: 71px;
+    top: 65px;
     left: -100%;
     width: 100%;
-    height: calc(100vh - 71px);
-    background-color: var(--color-boot);
+    height: calc(100vh - 65px);
+    background-color: var(--color-boot-dark);
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
@@ -273,7 +316,7 @@ nav ul li a:hover {
     font-size: 1.1rem;
     width: 100%;
     border-radius: 0;
-    border-bottom: 1px solid rgba(244, 236, 214, 0.15);
+    border-bottom: 1px solid rgba(242, 231, 205, 0.15);
   }
 
   nav ul li:last-child a {
@@ -281,7 +324,7 @@ nav ul li a:hover {
   }
 
   nav ul li a:hover {
-    background-color: rgba(249, 196, 0, 0.2);
+    background-color: rgba(224, 98, 27, 0.25);
     color: var(--color-cream);
   }
 }
@@ -289,64 +332,87 @@ nav ul li a:hover {
 /* Header */
 header {
   text-align: center;
-  padding: 2rem 0;
+  padding: 2rem 0 0;
 }
 
-/* Hero logo — the new poppy-boot illustration, centered */
+/* Hero logo — the poppy-boot illustration, centered */
 .banner {
-  max-width: 420px;
+  max-width: 400px;
   width: 100%;
-  margin: 1.5rem auto 2.5rem;
+  margin: 1.75rem auto 2.5rem;
   border: none;
+  padding: 0;
+  background: none;
   box-shadow: none;
   border-radius: 0;
-  filter: drop-shadow(6px 8px 6px rgba(32, 28, 22, 0.18));
+  filter: drop-shadow(5px 7px 5px rgba(36, 28, 18, 0.22));
 }
 
-/* Full-bleed sections — warm apricot band with inked top/bottom edges */
+/* Full-bleed sections — a warm handbill panel with double-rule edges */
 .full-bleed {
   width: 100%;
-  background-color: #f6d7b4;
-  border-top: var(--border-ink);
-  border-bottom: var(--border-ink);
-  padding: 3rem 0;
+  background-color: #e7cfa0;
+  border-top: 6px double var(--color-ink);
+  border-bottom: 6px double var(--color-ink);
+  padding: 2.5rem 0 3rem;
   margin: 3.5rem 0;
 }
 
-/* Enhanced blockquote for announcements — inked sticker card */
+/* Announcement — a framed NOTICE handbill with a label breaking the rule */
 blockquote {
   background-color: var(--color-paper);
-  border: var(--border-ink);
-  border-left: 10px solid var(--color-poppy);
-  margin: 2rem 0;
-  padding: 1.5rem 2rem;
+  border: 5px double var(--color-ink);
   border-radius: var(--border-radius);
-  box-shadow: var(--shadow-hard);
+  margin: 2.5rem 0 2rem;
+  padding: 1.9rem 2rem 1.5rem;
   position: relative;
   max-width: var(--max-width);
+  text-align: center;
+}
+
+blockquote::before {
+  content: "\2726\00a0\00a0N O T I C E\00a0\00a0\2726";
+  position: absolute;
+  top: -0.72em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: var(--color-cream);
+  padding: 0 0.85em;
+  color: var(--color-poppy-dark);
+  font-family: var(--font-body);
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 0.78rem;
+  white-space: nowrap;
 }
 
 blockquote p {
   font-size: 1.1rem;
-  margin: 0;
+  margin: 0 0 0.4rem;
+}
+
+blockquote p:last-child {
+  margin-bottom: 0;
 }
 
 blockquote strong {
   color: var(--color-poppy-dark);
 }
 
-/* Images */
+/* Images — framed with a double rule like a pinned print */
 img {
   max-width: 100%;
   height: auto;
   border-radius: var(--border-radius);
   display: block;
   margin: 1.5rem auto;
-  border: var(--border-ink);
-  box-shadow: var(--shadow-hard);
+  border: 5px double var(--color-ink);
+  padding: 6px;
+  background-color: var(--color-paper);
 }
 
-/* Features list */
+/* Features list — "Bill of Events" with star bullets */
 #featuring {
   margin-top: 2.5rem;
 }
@@ -360,26 +426,29 @@ ul li {
   position: relative;
 }
 
+#featuring + ul {
+  padding-left: 0;
+  max-width: 620px;
+  margin: 1.5rem auto 0;
+}
+
 #featuring + ul li {
   list-style: none;
-  padding-left: 1.75rem;
+  padding-left: 2rem;
 }
 
 #featuring + ul li::before {
-  content: "";
+  content: "\2726";
   position: absolute;
-  left: 0;
-  top: 0.55rem;
-  width: 10px;
-  height: 10px;
-  background-color: var(--color-poppy);
-  border: 2px solid var(--color-ink);
-  border-radius: 50%;
+  left: 0.25rem;
+  top: 0.05rem;
+  color: var(--color-poppy-dark);
+  font-size: 1rem;
 }
 
 /* Sponsors section */
 .sponsors {
-  padding: 1rem 0;
+  padding: 0.5rem 0;
 }
 
 .sponsors ul {
@@ -389,7 +458,7 @@ ul li {
   justify-content: center;
   gap: 2rem;
   padding: 0;
-  margin: 2rem 0;
+  margin: 2rem 0 0;
 }
 
 .sponsors ul li {
@@ -400,34 +469,32 @@ ul li {
 }
 
 .sponsors ul li:hover {
-  transform: translate(-2px, -3px);
+  transform: translateY(-3px);
 }
 
 .sponsors ul li img {
   max-width: 100%;
   height: auto;
-  padding: 0.75rem;
-  background-color: #ffffff;
-  border: 2px solid var(--color-ink);
+  padding: 0.7rem;
+  background-color: #fff;
+  border: 4px double var(--color-ink);
   border-radius: var(--border-radius);
-  box-shadow: 3px 3px 0 var(--color-ink);
-  filter: grayscale(15%);
-  transition: filter 0.3s ease, box-shadow 0.2s ease;
+  filter: grayscale(30%) sepia(12%);
+  transition: filter 0.3s ease;
 }
 
 .sponsors ul li:hover img {
-  filter: grayscale(0%);
-  box-shadow: 5px 6px 0 var(--color-ink);
+  filter: grayscale(0%) sepia(0%);
 }
 
-/* Footer */
+/* Footer — weathered leather with double-rule accents */
 footer {
   background-color: var(--color-boot-dark);
   color: var(--color-cream);
   width: 100%;
   padding: 0;
   margin-top: 4rem;
-  border-top: 4px solid var(--color-ink);
+  border-top: 6px double var(--color-ink);
 }
 
 .footer-content {
@@ -447,7 +514,11 @@ footer {
 }
 
 .footer-section h3 {
-  font-size: 1.8rem;
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 1.15rem;
   margin-bottom: 1.2rem;
   color: var(--color-cream);
   position: relative;
@@ -459,15 +530,14 @@ footer {
   position: absolute;
   left: 0;
   bottom: 0;
-  width: 50px;
-  height: 4px;
-  border-radius: 2px;
-  background-color: var(--color-poppy);
+  width: 60px;
+  height: 0;
+  border-bottom: 4px double var(--color-poppy);
 }
 
 .footer-section p {
   font-size: 0.95rem;
-  line-height: 1.6;
+  line-height: 1.65;
   opacity: 0.92;
 }
 
@@ -495,15 +565,14 @@ footer {
 .footer-section.links ul li {
   margin-bottom: 0.8rem;
   position: relative;
-  padding-left: 1.25rem;
+  padding-left: 1.5rem;
 }
 
 .footer-section.links ul li::before {
-  content: "→";
+  content: "\261e"; /* pointing hand */
   position: absolute;
   left: 0;
   color: var(--color-poppy);
-  font-weight: 700;
 }
 
 .footer-section.links a,
@@ -527,40 +596,37 @@ footer {
   gap: 1rem;
 }
 
-/* Buttons — poppy chips with the inked outline + hard shadow */
+/* Buttons — "Admit One" tickets: stamped ink with a cream inner rule */
 .footer-button {
   display: inline-block;
   background-color: var(--color-poppy);
-  color: var(--color-ink);
-  padding: 12px 20px;
+  color: var(--color-cream);
+  padding: 13px 22px;
   border: 2px solid var(--color-ink);
   border-radius: var(--border-radius);
-  box-shadow: 3px 3px 0 var(--color-ink);
+  box-shadow: inset 0 0 0 2px var(--color-cream), inset 0 0 0 4px var(--color-poppy);
   text-decoration: none;
+  font-family: var(--font-body);
   font-weight: 700;
-  font-size: 0.95rem;
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.85rem;
   text-align: center;
-  transition: transform 0.15s ease, box-shadow 0.15s ease, background-color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
 }
 
 .footer-button:hover {
-  background-color: var(--color-yellow);
-  color: var(--color-ink);
+  background-color: var(--color-ink);
+  color: var(--color-cream);
   text-decoration: none;
-  transform: translate(-2px, -2px);
-  box-shadow: 5px 5px 0 var(--color-ink);
-}
-
-.footer-button:active {
-  transform: translate(1px, 1px);
-  box-shadow: 2px 2px 0 var(--color-ink);
+  box-shadow: inset 0 0 0 2px var(--color-cream), inset 0 0 0 4px var(--color-ink);
 }
 
 .footer-bottom {
-  background-color: rgba(0, 0, 0, 0.18);
+  background-color: rgba(0, 0, 0, 0.22);
   padding: 1.5rem 20px;
   text-align: center;
-  border-top: 2px solid rgba(32, 28, 22, 0.4);
+  border-top: 3px double rgba(242, 231, 205, 0.35);
 }
 
 .social-icons {
@@ -571,10 +637,10 @@ footer {
   display: inline-block;
   width: 40px;
   height: 40px;
-  line-height: 38px;
+  line-height: 36px;
   text-align: center;
   background-color: var(--color-boot);
-  border: 2px solid var(--color-ink);
+  border: 2px solid var(--color-cream);
   border-radius: 50%;
   margin: 0 6px;
   color: var(--color-cream);
@@ -583,7 +649,7 @@ footer {
 
 .social-icon:hover {
   background-color: var(--color-poppy);
-  color: var(--color-ink);
+  color: var(--color-cream);
   transform: translateY(-3px);
 }
 
@@ -591,6 +657,7 @@ footer {
   font-size: 0.85rem;
   opacity: 0.85;
   margin: 0;
+  letter-spacing: 0.3px;
 }
 
 .copyright a {
@@ -604,13 +671,15 @@ footer {
 
 /* Simple icons using pseudo-elements */
 .icon-calendar::before {
-  content: "📅";
-  margin-right: 5px;
+  content: "\2605";
+  margin-right: 6px;
+  color: var(--color-poppy);
 }
 
 .icon-email::before {
-  content: "📧";
-  margin-right: 5px;
+  content: "\2709";
+  margin-right: 6px;
+  color: var(--color-poppy);
 }
 
 .icon-facebook::before {
@@ -619,11 +688,11 @@ footer {
 }
 
 .icon-instagram::before {
-  content: "📷";
+  content: "\25c9";
 }
 
 .icon-rss::before {
-  content: "📰";
+  content: "\27a4";
 }
 
 /* Responsive adjustments */
@@ -644,12 +713,12 @@ footer {
 
 /* Responsive adjustments */
 @media (max-width: 768px) {
-  h1 {
-    font-size: 2.9rem;
+  h1, h1.title {
+    font-size: 3rem;
   }
 
   h2 {
-    font-size: 2rem;
+    font-size: 1.9rem;
   }
 
   .sponsors ul li {
@@ -658,16 +727,16 @@ footer {
 }
 
 @media (max-width: 480px) {
-  h1 {
-    font-size: 2.5rem;
+  h1, h1.title {
+    font-size: 2.4rem;
   }
 
   body {
-    font-size: 15px;
+    font-size: 16px;
   }
 
   .banner {
-    max-width: 300px;
+    max-width: 290px;
   }
 
   .sponsors ul li {
@@ -676,6 +745,6 @@ footer {
   }
 
   blockquote {
-    padding: 1rem 1.5rem;
+    padding: 1.6rem 1.4rem 1.2rem;
   }
 }
