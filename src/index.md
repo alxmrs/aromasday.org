@@ -3,6 +3,10 @@ title: Aromas Day
 description-meta: A day in the country.
 ---
 
+::: tagline
+A Day in the Country
+:::
+
 #### Presented by the [Aromas Eagles](https://aromaseagles.org/)
 
 > **[Aromas Day booth applications are now live](https://forms.gle/dv34XfTkaF93wPLr8)**.
@@ -11,13 +15,13 @@ description-meta: A day in the country.
 
 This year's Aromas Day celebration is currently being planned! If you'd like to be involved, we meet at 7pm on the second Wednesday of every month at the Grange.
 
-We'll see you **August 30, 2026** for a fantastic day filled with music, delicious food, community and much more!
+**Come one, come all!** We'll see you **August 30, 2026** for a fantastic day filled with music, delicious food, community and much more!
 
 ![](/assets/aromas-day-2026.png "A day in the country"){.banner}
 
 
 
-## Featuring
+## Bill of Events {#featuring}
 
 - **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
 - **☮️ Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.

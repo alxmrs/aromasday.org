@@ -98,15 +98,15 @@ h1, h2, h3 {
 }
 
 #title-block-header::before {
-  content: "\2605  \00b7  \2605  \00b7  \2605";
+  content: "\2605\00a0\00a0OVER 40 YEARS IN THE MAKING\00a0\00a0\2605";
   display: block;
   font-family: var(--font-body);
   font-weight: 700;
   color: var(--color-poppy-dark);
-  letter-spacing: 0.4em;
-  font-size: 0.85rem;
+  letter-spacing: 0.18em;
+  font-size: 0.8rem;
   margin-bottom: 0.5rem;
-  text-indent: 0.4em;
+  text-indent: 0.18em;
 }
 
 h1, h1.title {
@@ -165,6 +165,26 @@ h4 {
 
 h4::before { content: "\2014\00a0\00a0"; color: var(--color-poppy); }
 h4::after  { content: "\00a0\00a0\2014"; color: var(--color-poppy); }
+
+/* Motto — the "A Day in the Country" tagline beneath the masthead */
+.tagline {
+  text-align: center;
+  font-family: var(--font-display);
+  font-size: 1.85rem;
+  line-height: 1.1;
+  color: var(--color-poppy-dark);
+  margin: 0.7rem auto 0.1rem;
+}
+
+.tagline p {
+  margin: 0;
+}
+
+@media (max-width: 480px) {
+  .tagline {
+    font-size: 1.45rem;
+  }
+}
 
 p {
   margin-bottom: 1.2rem;
