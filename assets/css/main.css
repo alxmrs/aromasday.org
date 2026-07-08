@@ -129,15 +129,15 @@ h1, h2, h3 {
 }
 
 #title-block-header::before {
-  content: "\2605\00a0\00a0OVER 40 YEARS IN THE MAKING\00a0\00a0\2605";
+  content: "\2605  \00b7  \2605  \00b7  \2605";
   display: block;
   font-family: var(--font-body);
   font-weight: 700;
   color: var(--color-poppy-dark);
-  letter-spacing: 0.18em;
-  font-size: 0.8rem;
+  letter-spacing: 0.4em;
+  font-size: 0.85rem;
   margin-bottom: 0.5rem;
-  text-indent: 0.18em;
+  text-indent: 0.4em;
 }
 
 h1, h1.title {
