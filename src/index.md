@@ -17,7 +17,10 @@ This year's Aromas Day celebration is currently being planned! If you'd like to 
 
 **Come one, come all!** We'll see you **August 30, 2026** for a fantastic day filled with music, delicious food, community and much more!
 
-![](/assets/aromas-day-2026.png "A day in the country"){.banner}
+<picture class="banner-pic">
+<source srcset="/assets/aromas-day-2026.webp" type="image/webp">
+<img src="/assets/aromas-day-2026.png" title="A day in the country" alt="Aromas Day — a day in the country" class="banner" />
+</picture>
 
 
 

@@ -386,7 +386,14 @@ header {
   padding: 2rem 0 0;
 }
 
-/* Hero logo — the poppy-boot illustration, centered */
+/* Hero logo — the poppy-boot illustration, centered.
+   Wrapped in <picture> (WebP with PNG fallback); the wrapper stays a
+   block so the <img class="banner"> keeps centering via auto margins. */
+.banner-pic {
+  display: block;
+  text-align: center;
+}
+
 .banner {
   max-width: 400px;
   width: 100%;
