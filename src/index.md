@@ -31,7 +31,7 @@ This year's Aromas Day celebration is currently being planned! If you'd like to 
 - **Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
 - **Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
 - **Live Music** - Come listen to local music of all kinds at the main stage.
-- **Vendors** - Local artisans with items of all kinds for sale.
+- **Artisans** - Local makers and craftspeople with items of all kinds for sale.
 - **Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
 - **Kids Zone** - Activities for kids in the little park! Come see performers and do a craft in the shade.
 
