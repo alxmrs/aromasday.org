@@ -9,9 +9,11 @@ A Day in the Country
 
 #### Presented by the [Aromas Eagles](https://aromaseagles.org/)
 
-> **[Aromas Day booth applications are now live](https://forms.gle/dv34XfTkaF93wPLr8)**.
+> **Booth applications are now live**.
 >
-> If you are a vendor, garage sale alley host, or nonprofit, [please apply](https://forms.gle/dv34XfTkaF93wPLr8).
+> If you are a vendor, garage sale alley host, or nonprofit, please apply.
+> 
+> [Apply Now](https://forms.gle/dv34XfTkaF93wPLr8){.footer-button}
 
 This year's Aromas Day celebration is currently being planned! If you'd like to be involved, we meet at 7pm on the second Wednesday of every month at the Grange.
 
@@ -26,12 +28,12 @@ This year's Aromas Day celebration is currently being planned! If you'd like to 
 
 ## Bill of Events {#featuring}
 
-- **🌯 Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
-- **☮️ Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
-- **🪇 Live Music** - Come listen to local music of all kinds at the main stage.
-- **🧶 Vendors** - Local artisans with items of all kinds for sale.
-- **🪑 Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
-- **👧 Kids Zone** - Activities for kids in the little park! Come see performers and do a craft in the shade.
+- **Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
+- **Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
+- **Live Music** - Come listen to local music of all kinds at the main stage.
+- **Vendors** - Local artisans with items of all kinds for sale.
+- **Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
+- **Kids Zone** - Activities for kids in the little park! Come see performers and do a craft in the shade.
 
 
 <div class="full-bleed">
@@ -39,20 +41,19 @@ This year's Aromas Day celebration is currently being planned! If you'd like to 
 
 <div class="sponsors">
 
+## Sponsor Aromas Day
 
-## Thanks to last year's sponsors!
+There are many reasons to sponsor Aromas Day. Check out this [slide deck](https://docs.google.com/presentation/d/e/2PACX-1vRuhih9sp_-WkjhagtGozl68UN20LiAwqBD8jhOHU8NRUcULJ39Iuur06A9cWA4-lUB0191npEmNj7h/pub?start=false&loop=true&delayms=3000)
+to learn why you should sponsor our event, our levels of sponsorship, and how you can apply to be a sponsor.
 
-We are so grateful to our 2025 Aromas Day sponsors, without whom Aromas Day would not be possible.
+[Sponsor Aromas Day!](https://docs.google.com/presentation/d/e/2PACX-1vRuhih9sp_-WkjhagtGozl68UN20LiAwqBD8jhOHU8NRUcULJ39Iuur06A9cWA4-lUB0191npEmNj7h/pub?start=false&loop=true&delayms=3000){.footer-button}
+
+## Thanks to our sponsors
+
+We are so grateful to our 2026 Aromas Day sponsors, without whom Aromas Day would not be possible.
 
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
-- ![](/assets/sponsors/driscolls.jpg "Driscoll's Berries")
-- ![](/assets/sponsors/graniterock.png "Graniterock")
-- ![](/assets/sponsors/arroyo.png "Arroyo Landscape Construction")
-- ![](/assets/sponsors/cnn.jpg "C&N Tractors")
-- ![](/assets/sponsors/recology.jpg "Recology")
-- ![](/assets/sponsors/willis-construction.png "Willis Construction Co. Inc")
-- ![](/assets/sponsors/morgan-la-mascus.png "Morgan La Mascus Graphic Design")
-- ![](/assets/sponsors/georges-plumbing.png "George's Plumbing Service Inc")
+- ![](/assets/sponsors/south-valley-church.png "South Valley Community Church")
 
 </div>
 </div>
