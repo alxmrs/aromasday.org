@@ -54,6 +54,7 @@ We are so grateful to our 2026 Aromas Day sponsors, without whom Aromas Day woul
 
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
 - ![](/assets/sponsors/south-valley-church.png "South Valley Community Church")
+- ![](/assets/sponsors/graniterock.png "Granite Rock")
 
 </div>
 </div>
