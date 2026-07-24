@@ -53,8 +53,14 @@ to learn why you should sponsor our event, our levels of sponsorship, and how yo
 We are so grateful to our 2026 Aromas Day sponsors, without whom Aromas Day would not be possible.
 
 - ![](/assets/sponsors/foe.png "The Fraternal Order of the Eagles in Aromas")
+- ![](/assets/sponsors/cnn.jpg "C&N Tractors")
+- ![](/assets/sponsors/driscolls.jpg "Driscoll's")
 - ![](/assets/sponsors/south-valley-church.png "South Valley Community Church")
 - ![](/assets/sponsors/graniterock.png "Granite Rock")
+- ![](/assets/sponsors/arroyo.png "Arroyo Landscaping")
+- ![](/assets/sponsors/sothebys.png "Sotheby's International Realty")
+- ![](/assets/sponsors/recology.jpg "Recology")
+- ![](/assets/sponsors/vinylcuts.jpeg "Vinyl Cuts")
 
 </div>
 </div>
