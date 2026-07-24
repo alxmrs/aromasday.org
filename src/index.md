@@ -61,6 +61,7 @@ We are so grateful to our 2026 Aromas Day sponsors, without whom Aromas Day woul
 - ![](/assets/sponsors/sothebys.png "Sotheby's International Realty")
 - ![](/assets/sponsors/recology.jpg "Recology")
 - ![](/assets/sponsors/vinylcuts.jpeg "Vinyl Cuts")
+- ![](/assets/sponsors/bonnietattoos.png "Bonnie Tattoos")
 
 </div>
 </div>
