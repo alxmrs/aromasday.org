@@ -57,6 +57,7 @@ We are so grateful to our 2026 Aromas Day sponsors, without whom Aromas Day woul
 - ![](/assets/sponsors/driscolls.jpg "Driscoll's")
 - ![](/assets/sponsors/south-valley-church.png "South Valley Community Church")
 - ![](/assets/sponsors/sothebys.png "Sotheby's International Realty")
+- ![](/assets/sponsors/merose-family.png "The Merose Family")
 - ![](/assets/sponsors/graniterock.png "Granite Rock")
 - ![](/assets/sponsors/arroyo.png "Arroyo Landscaping")
 - ![](/assets/sponsors/recology.jpg "Recology")
