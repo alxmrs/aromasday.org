@@ -51,6 +51,9 @@ html {
   --band: #e7cfa0;                       /* full-bleed panel */
   --tile: #ffffff;                       /* sponsor logo tiles */
   --paper-blend: multiply;               /* how the grain sits on the canvas */
+  --rule-soft: rgba(36, 28, 18, 0.35);   /* dotted leader lines in the program */
+  --row-alt: rgba(138, 79, 40, 0.055);   /* alternating program rows */
+  --row-hover: rgba(224, 98, 27, 0.11);  /* hovered program row */
 }
 
 /* ── Dark mode ─────────────────────────────────────────────────────────
@@ -66,6 +69,9 @@ html {
     --band: #2c2118;
     --tile: #ece4d2;
     --paper-blend: soft-light;
+    --rule-soft: rgba(230, 216, 186, 0.3);
+    --row-alt: rgba(242, 231, 205, 0.045);
+    --row-hover: rgba(242, 131, 60, 0.13);
 
     /* Brighten the "poppy ink" for accents + links on dark */
     --color-poppy: #f2833c;
@@ -239,12 +245,123 @@ a:hover {
   text-decoration: underline;
 }
 
+/* Schedule — a playbill "programme": framed in a double rule, leather
+   header band, dotted leader lines between acts, tabular times. */
 table {
-  padding: 20px;
+  width: 100%;
+  max-width: min(620px, calc(100% - 40px));
+  margin: 2rem auto 2.5rem;
+  /* separate (not collapse) so the double-rule frame stays a *double* rule */
+  border-collapse: separate;
+  border-spacing: 0;
+  border: 5px double var(--rule);
+  border-radius: var(--border-radius);
+  background-color: var(--surface);
+  /* one place to tune cell rhythm; the narrow breakpoint just swaps these */
+  --cell-pad-y: 0.85rem;
+  --cell-pad-x: 1.25rem;
+  --star-hang: 1.3rem;
+}
+
+thead {
+  background-color: var(--color-boot-dark);
+}
+
+th {
+  font-family: var(--font-body);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-size: 0.8rem;
+  color: var(--color-cream);
+  text-align: left;
+  padding: var(--cell-pad-y) var(--cell-pad-x);
+  border-bottom: 4px double var(--color-ink);
+}
+
+th:first-child {
+  border-right: 2px dotted rgba(242, 231, 205, 0.3);
 }
 
 td {
-  padding: 10px;
+  padding: var(--cell-pad-y) var(--cell-pad-x);
+  border-bottom: 2px dotted var(--rule-soft);
+  vertical-align: baseline;
+}
+
+/* Time column — tabular figures so the hours line up like set type */
+td:first-child {
+  font-weight: 600;
+  font-size: 0.95rem;
+  color: var(--text-muted);
+  font-variant-numeric: tabular-nums;
+  letter-spacing: 0.02em;
+  white-space: nowrap;
+  border-right: 2px dotted var(--rule-soft);
+  width: 1%;
+}
+
+/* Act column — the billing, with a poppy star hung in the margin so that
+   long names wrap flush under themselves rather than under the star. */
+td:last-child {
+  font-weight: 600;
+  font-size: 1.08rem;
+  color: var(--text);
+  padding-left: calc(var(--cell-pad-x) + var(--star-hang));
+  text-indent: calc(-1 * var(--star-hang));
+}
+
+td:last-child::before {
+  content: "\2726";
+  color: var(--color-poppy-dark);
+  font-size: 0.8rem;
+  font-weight: 400;
+  margin-right: 0.5rem;
+  vertical-align: 0.1em;
+}
+
+tbody tr:nth-child(even) {
+  background-color: var(--row-alt);
+}
+
+tbody tr:last-child td {
+  border-bottom: none;
+}
+
+tbody tr {
+  transition: background-color 0.2s ease;
+}
+
+tbody tr:hover {
+  background-color: var(--row-hover);
+}
+
+@media (max-width: 560px) {
+  table {
+    max-width: calc(100% - 24px);
+    margin: 1.5rem auto 2rem;
+    --cell-pad-y: 0.7rem;
+    --cell-pad-x: 0.8rem;
+    --star-hang: 1.2rem;
+  }
+
+  th {
+    font-size: 0.7rem;
+    letter-spacing: 1.2px;
+  }
+
+  td:first-child {
+    font-size: 0.82rem;
+  }
+
+  td:last-child {
+    font-size: 1rem;
+  }
+
+  td:last-child::before {
+    font-size: 0.75rem;
+    margin-right: 0.45rem;
+  }
 }
 
 /* Navigation — a saloon-sign bar with a double-rule bottom edge */
