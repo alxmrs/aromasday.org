@@ -246,11 +246,109 @@ a:hover {
 }
 
 /* Schedule — a playbill "programme": framed in a double rule, leather
-   header band, dotted leader lines between acts, tabular times. */
+   header band, dotted leader lines between acts, tabular times, with a
+   pair of bees (cropped from the poster art) drifting around the frame. */
+.schedule {
+  position: relative;
+  width: 100%;
+  max-width: 660px;
+  /* headroom above and below the frame for the bees to hover in, so they
+     never collide with the copy above or the sponsor band below */
+  padding: 48px 0 44px;
+}
+
+/* the wrapper's padding provides the section spacing now */
+.schedule table {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* ── Bees ───────────────────────────────────────────────────────────────
+   Decorative bees cropped from the poster art, drifting around the
+   schedule and the sponsor board. Pseudo-elements, so they stay out of
+   the document (there is nothing to announce to a screen reader) and out
+   of the global framed-img rule. Each pair is a ::before up top and a
+   ::after down below, the second one flipped so both face inward. */
+.schedule::before,
+.schedule::after,
+.sponsors::before,
+.sponsors::after {
+  content: "";
+  position: absolute;
+  width: var(--bee-size, 62px);
+  height: calc(var(--bee-size, 62px) * 1.032); /* the crop is 154x159 */
+  background-image: url("/assets/aromas-day-2026-bee.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  filter: drop-shadow(3px 4px 3px rgba(36, 28, 18, 0.25));
+  pointer-events: none;
+  z-index: 2; /* in front of the frame, so they read as flying over it */
+}
+
+/* Flipped horizontally so the lower bee of each pair faces up-and-in */
+.schedule::after,
+.sponsors::after {
+  transform: scaleX(-1);
+}
+
+.schedule::before {
+  top: 0;
+  right: 0;
+  animation: bee-drift 6s ease-in-out infinite;
+}
+
+.schedule::after {
+  bottom: 0;
+  left: 0;
+  animation: bee-drift-flip 7.5s ease-in-out infinite 0.8s;
+}
+
+/* On the sponsor board the bees keep to the margins either side of the
+   centered headings and logo grid, so they never sit over a logo. */
+.sponsors {
+  position: relative;
+}
+
+.sponsors::before {
+  --bee-size: 54px;
+  top: 0.5rem;
+  right: 0;
+  animation: bee-drift 8s ease-in-out infinite 1.4s;
+}
+
+.sponsors::after {
+  --bee-size: 48px;
+  bottom: 3rem; /* alongside the last row of logos, not stranded below it */
+  left: 0.5rem;
+  animation: bee-drift-flip 6.8s ease-in-out infinite 0.3s;
+}
+
+@keyframes bee-drift {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50%      { transform: translate(-7px, -9px) rotate(-5deg); }
+}
+
+/* scaleX(-1) comes first, so the translate below runs in flipped space */
+@keyframes bee-drift-flip {
+  0%, 100% { transform: scaleX(-1) translate(0, 0) rotate(0deg); }
+  50%      { transform: scaleX(-1) translate(-6px, -8px) rotate(-4deg); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .schedule::before,
+  .schedule::after,
+  .sponsors::before,
+  .sponsors::after {
+    animation: none;
+  }
+}
+
 table {
   width: 100%;
   max-width: min(620px, calc(100% - 40px));
   margin: 2rem auto 2.5rem;
+  position: relative; /* keeps the frame above the bees' shadows */
+  z-index: 1;
   /* separate (not collapse) so the double-rule frame stays a *double* rule */
   border-collapse: separate;
   border-spacing: 0;
@@ -337,6 +435,33 @@ tbody tr:hover {
 }
 
 @media (max-width: 560px) {
+  .schedule::before,
+  .schedule::after {
+    --bee-size: 44px;
+  }
+
+  .schedule::before {
+    top: 0;
+    right: 4px;
+  }
+
+  .schedule::after {
+    bottom: 0;
+    left: 4px;
+  }
+
+  .sponsors::before {
+    --bee-size: 40px;
+  }
+
+  .sponsors::after {
+    --bee-size: 36px;
+  }
+
+  .schedule {
+    padding: 34px 0 30px;
+  }
+
   table {
     max-width: calc(100% - 24px);
     margin: 1.5rem auto 2rem;
@@ -929,6 +1054,16 @@ footer {
    is a transparent illustration with black outlines that would vanish on a
    dark canvas — so mount it on a light "pinned print" card. */
 @media (prefers-color-scheme: dark) {
+  /* The bee is black-outlined line art; on the dark canvas those outlines
+     dissolve, so trade the paper shadow for a faint cream halo. */
+  .schedule::before,
+  .schedule::after,
+  .sponsors::before,
+  .sponsors::after {
+    filter: drop-shadow(0 0 2px rgba(242, 231, 205, 0.5))
+            drop-shadow(0 4px 7px rgba(0, 0, 0, 0.55));
+  }
+
   .banner {
     max-width: 400px;
     background: #f3ead4;

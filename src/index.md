@@ -33,6 +33,7 @@ This year's Aromas Day celebration is currently being planned! If you'd like to 
 
 We have a great show in store for you at Marshall's Parking lot. Here's who's performing this year:
 
+::: schedule
 | Time              | Act                      |
 |-------------------|--------------------------|
 | 09:00am - 11:00am | DJ                       |
@@ -41,6 +42,7 @@ We have a great show in store for you at Marshall's Parking lot. Here's who's pe
 | 01:00pm - 02:30pm | HeartQuakers             | 
 | 02:30pm - 02:45pm | Eagles Presentation      |
 | 02:45pm - 04:00pm | Mariachi Santa Maria     |
+:::
 
 
 <div class="full-bleed">
