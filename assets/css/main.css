@@ -303,6 +303,26 @@ a:hover {
   animation: bee-drift-flip 7.5s ease-in-out infinite 0.8s;
 }
 
+/* The Kids Zone bill gets a single bee on the opposite corner — two more
+   in the same spots as the bill above would just read as a repeat. */
+.kids::before {
+  content: none;
+}
+
+.kids::after {
+  --bee-size: 52px; /* a smaller bee for the smaller bill */
+  left: auto;
+  right: 0;
+  bottom: 0;
+  transform: none; /* unflipped, so it faces up-and-in from this side */
+  animation: bee-drift 6.4s ease-in-out infinite 1.1s;
+}
+
+/* no bee up top, so the headroom above the frame can come back in */
+.kids {
+  padding-top: 20px;
+}
+
 /* On the sponsor board the bees keep to the margins either side of the
    centered headings and logo grid, so they never sit over a logo. */
 .sponsors {
@@ -359,10 +379,11 @@ table {
   --cell-pad-y: 0.85rem;
   --cell-pad-x: 1.25rem;
   --star-hang: 1.3rem;
+  --band-chrome: var(--color-boot-dark); /* the .kids variant swaps this */
 }
 
 thead {
-  background-color: var(--color-boot-dark);
+  background-color: var(--band-chrome);
 }
 
 th {
@@ -434,6 +455,21 @@ tbody tr:hover {
   background-color: var(--row-hover);
 }
 
+/* ── Kids Zone variant ──────────────────────────────────────────────────
+   A sibling bill rather than a second copy of the same one: the band
+   turns the boot-scrollwork turquoise, the leader rules pick up the same
+   ink, and the star markers become poppies. Both colours come straight
+   off the logo art — turquoise scrollwork, orange poppies. */
+.kids table {
+  --band-chrome: var(--color-teal-dark);
+  --rule-soft: rgba(29, 109, 120, 0.4);
+}
+
+.kids td:last-child::before {
+  content: "\273F"; /* florette — a poppy rather than a star */
+  font-size: 0.85rem;
+}
+
 @media (max-width: 560px) {
   .schedule::before,
   .schedule::after {
@@ -450,6 +486,12 @@ tbody tr:hover {
     left: 4px;
   }
 
+  /* the Kids Zone bee stays on the right, where the wide layout puts it */
+  .kids::after {
+    left: auto;
+    right: 4px;
+  }
+
   .sponsors::before {
     --bee-size: 40px;
   }
@@ -460,6 +502,10 @@ tbody tr:hover {
 
   .schedule {
     padding: 34px 0 30px;
+  }
+
+  .kids {
+    padding-top: 14px; /* still no bee up top at this width */
   }
 
   table {
@@ -1062,6 +1108,11 @@ footer {
   .sponsors::after {
     filter: drop-shadow(0 0 2px rgba(242, 231, 205, 0.5))
             drop-shadow(0 4px 7px rgba(0, 0, 0, 0.55));
+  }
+
+  /* the turquoise leader rules need lifting off the dark paper */
+  .kids table {
+    --rule-soft: rgba(96, 190, 202, 0.38);
   }
 
   .banner {

@@ -45,16 +45,16 @@ We have a great show in store for you at Marshall's Parking lot. Here's who's pe
 :::
 
 
-In addition, we also have sever acts performing in our <u>Kids Zone</u>:
+In addition, we also have several acts performing in our <u>Kids Zone</u>:
 
-:::schedule
+::: {.schedule .kids}
 
-| Time              | Act                                 |
-|-------------------|-------------------------------------|
-| All Day           | Kids Crafts (all supplies provided) |
-| All Day           | Fiesta Facepainter                  |
-| 11:15am - 12:00pm | Surfing Magician                    |
-| 01:00pm - 03:00pm | Bubble Diva                         |
+| Time    | Act                                                                                |
+|---------|------------------------------------------------------------------------------------|
+| 09:00am | Kids Crafts (all supplies provided)                                                |
+| 11:15am | The Surfing Magician, [Doug Hofkins](https://surfingmagician.com/)  |
+| 01:00pm | The Santa Cruz Bubble Lady, [Rachel Maryam Smith](https://www.rachelsmith.online/) |
+| All Day | Fiesta Facepainter                                                                 |
 
 :::
 
