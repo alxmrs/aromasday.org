@@ -45,6 +45,20 @@ We have a great show in store for you at Marshall's Parking lot. Here's who's pe
 :::
 
 
+In addition, we also have sever acts performing in our <u>Kids Zone</u>:
+
+:::schedule
+
+| Time              | Act                                 |
+|-------------------|-------------------------------------|
+| All Day           | Kids Crafts (all supplies provided) |
+| All Day           | Fiesta Facepainter                  |
+| 11:15am - 12:00pm | Surfing Magician                    |
+| 01:00pm - 03:00pm | Bubble Diva                         |
+
+:::
+
+
 <div class="full-bleed">
 <div class="content-wrapper">
 
