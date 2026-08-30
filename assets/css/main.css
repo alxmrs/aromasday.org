@@ -758,6 +758,33 @@ img {
   background-color: var(--surface);
 }
 
+/* Embeds — Google's map snippet ships fixed width="600" height="450"
+   attributes, which overflow any viewport narrower than 600px. Cap the
+   width and keep the same 20px gutter the rest of the page uses. */
+iframe {
+  display: block;
+  width: 100%;
+  max-width: min(600px, calc(100% - 40px));
+  margin: 1.5rem auto;
+  border-radius: var(--border-radius);
+}
+
+/* The maps are 4:3 at their native size; hold that as they scale down.
+   Scoped to the maps so a future embed of another shape (a 16:9 video,
+   say) is not letterboxed into the wrong ratio. */
+iframe[src*="google.com/maps"] {
+  height: auto;
+  aspect-ratio: 4 / 3;
+}
+
+/* 4:3 leaves a phone-width map only ~240px tall, which is too cramped to
+   read street names; a squarer frame shows more ground for the same width. */
+@media (max-width: 560px) {
+  iframe[src*="google.com/maps"] {
+    aspect-ratio: 1 / 1;
+  }
+}
+
 /* Features list — "Bill of Events" with star bullets */
 #featuring {
   margin-top: 2.5rem;
