@@ -38,8 +38,8 @@ We have a great show in store for you at the Marshall's parking lot. Here's who'
 |-------------------|--------------------------|
 | 09:00am - 11:00am | DJ                       |
 | 11:00am - 12:30pm | High Sierra Jam Allstars |
-| 12:30pm - 01:00pm | Surfing Magician         |
-| 01:00pm - 02:30pm | HeartQuakers             | 
+| 12:30pm - 01:00pm | The Surfing Magician     |
+| 01:00pm - 02:30pm | The Heartquakers         | 
 | 02:30pm - 02:45pm | Eagles Presentation      |
 | 02:45pm - 04:00pm | Mariachi Santa Maria     |
 :::
