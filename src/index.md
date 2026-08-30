@@ -23,15 +23,15 @@ This year's Aromas Day celebration is currently being planned! If you'd like to 
 
 - **Grange Breakfast** - Start your day at the [Grange](https://aromasgrange.org/) with a _delicious_ breakfast.
 - **Non-Profit Booths** - Support local causes (and fill your belly) by purchasing food on Blohm Ave.
-- **Live Music** - Come listen to local music of all kinds at the main stage.
-- **Artisans** - Local makers and craftspeople with items of all kinds for sale.
+- **Live Music** - Come listen to local music of all kinds at the main stage in the Marshall's parking lot.
+- **Artisans** - Local makers and craftspeople with items of all kinds for sale between Rose Ave and Blohm Ave.
 - **Garage Sale Alley** - Head to Carpenteria Ave by the school for a row of garage sales with unexpected finds.
 - **Kids Zone** - Activities for kids in the little park! Come see performers and do a craft in the shade.
 
 
 ## Schedule
 
-We have a great show in store for you at Marshall's Parking lot. Here's who's performing this year:
+We have a great show in store for you at the Marshall's parking lot. Here's who's performing this year:
 
 ::: schedule
 | Time              | Act                      |
@@ -58,6 +58,20 @@ In addition, we also have several acts performing in our <u>Kids Zone</u>:
 
 :::
 
+## Parking
+
+Aromas Day is located at the [town of Aromas](https://aromas.town). General parking can be found at the Aromas Community Park. From there, it's easy
+to walk into town. A local non-profit is providing tractor rides in to town for those who want or need it.
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3253.2889353423593!2d-121.65100852423146!3d36.891176162566154!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x808e03bb60351d11%3A0x1dcec08ee1b82814!2sAromas%20Community%20Park!5e1!3m2!1sen!2sus!4v1788058550688!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<br/>
+
+If you require handicap parking, you may park in the Aromas School parking lot. Security will require an ADA hang tag, so make sure you remember it! **Please drive in to the school from Aromas Road only.**
+
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.213807825691!2d-121.64411627923536!3d36.8904809605561!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x54d2eb4363f06295%3A0x1629278a4e7be8e8!2sAromas%20School!5e1!3m2!1sen!2sus!4v1788058635327!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="strict-origin-when-cross-origin"></iframe>
+<br/>
+
+See you there!
 
 <div class="full-bleed">
 <div class="content-wrapper">
